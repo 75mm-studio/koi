@@ -6,6 +6,8 @@ Simple Project Management Web Application
 
 [WEBn - 생활코딩에선 이 수업을 권장하고 있습니다](https://opentutorials.org/course/3083)
 
+[WEBn 수업 Youtube 재](https://www.youtube.com/playlist?list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb)
+
 [웹 애플리케이션 만들기 - 앗 legacy 수업이였네요](https://opentutorials.org/course/1688)
 
 

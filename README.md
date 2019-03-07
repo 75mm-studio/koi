@@ -2,7 +2,7 @@
 Simple Project Management Web Application
 
 
-## 웹 애플리케이션 공부
+## 웹 애플리케이션 튜토리얼 - 생활코딩
 
 [WEBn - 생활코딩에선 이 수업을 권장하고 있습니다](https://opentutorials.org/course/3083)
 
@@ -21,10 +21,7 @@ Simple Project Management Web Application
 ~[웹 애플리케이션 만들기 - 앗 legacy 수업이였네요](https://opentutorials.org/course/1688)~
 
 
-## HTML 공부
-[HTML 수업](https://opentutorials.org/module/1892)
-
-## Go 공부
+## Golang 튜토리얼
 
 [Introduction to the Go Programming Language](https://pythonprogramming.net/go/introduction-go-language-programming-tutorial/)
 

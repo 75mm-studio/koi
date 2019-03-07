@@ -6,22 +6,13 @@ Simple Project Management Web Application
 
 [WEBn - 생활코딩에선 이 수업을 권장하고 있습니다](https://opentutorials.org/course/3083)
 
-[WEBn 수업 Youtube 재생목록](https://www.youtube.com/playlist?list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb)
+1. [WEB1 - HTML & Internet](https://opentutorials.org/course/3084)
+    - [Youtube 자동재생)](https://www.youtube.com/playlist?list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb)
 
-[웹 애플리케이션 만들기 - 앗 legacy 수업이였네요](https://opentutorials.org/course/1688)
+1. [WEB2 - JavaScript](https://opentutorials.org/course/3085)
+    - [Youtube 자동재생)](https://www.youtube.com/playlist?list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf)
 
-
-1. 구상
-
-1. 기획
-
-1. 디자인
-    1. 미적요소
-    1. 유저 편의성
-
-1. 개발
-
-1. 테스트 - Quality Assurance(QA)
+~[웹 애플리케이션 만들기 - 앗 legacy 수업이였네요](https://opentutorials.org/course/1688)~
 
 
 ## HTML 공부

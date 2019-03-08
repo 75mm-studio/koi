@@ -14,7 +14,8 @@ Simple Project Management Web Application
 
 1. [WEB2 - JavaScript](https://opentutorials.org/course/3085)
     - [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf)
-    
+    - [Javascript - Programming Language | Tutorial](https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpPQbcrA-SzALJeFm23tPrAI)
+
 1. [WEB2 - Node.js](https://opentutorials.org/course/3332)
     - [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMA9QQX5wqj6ThK7t2tsGxjm)
 

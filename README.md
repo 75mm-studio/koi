@@ -2,9 +2,7 @@
 Simple Project Management Web Application
 
 
-## 웹 애플리케이션 튜토리얼 - 생활코딩
-
-[WEBn - 생활코딩에선 이 수업을 권장하고 있습니다](https://opentutorials.org/course/3083)
+## 웹 애플리케이션 튜토리얼
 
 1. HTML
     - [WEB1 - HTML & Internet | 생활코딩](https://opentutorials.org/course/3084) | [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb)

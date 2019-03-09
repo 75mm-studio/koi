@@ -13,6 +13,7 @@ Simple Project Management Web Application
 
 1. MySQL
 
+- Example Images from [Tears of Steel](https://media.xiph.org/tearsofsteel/)
 
 [Preview](https://lazypic.github.io/koi/)
 

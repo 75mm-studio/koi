@@ -1,6 +1,8 @@
 # koi
 Simple Project Management Web Application
 
+[Preview](https://lazypic.github.io/koi/)
+
 ## Style
 
 ### Color Scheme

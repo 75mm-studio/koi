@@ -3,13 +3,6 @@ Simple Project Management Web Application
 
 [Preview](https://lazypic.github.io/koi/)
 
-## Style
-
-### Color Scheme
-
-- font-color: #abb2be
-- bg-color: #292d34
-
 ## 웹 애플리케이션 튜토리얼
 
 1. HTML

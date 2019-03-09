@@ -11,7 +11,7 @@ Simple Project Management Web Application
 1. CSS
     - [WEB2 - CSS | 생활코딩](https://opentutorials.org/course/3086) | [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMAnWgUYiAW2cTzSBywFO75B)
     - [CSS - Style Your Website | Tutorial](https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpNO7ScZFr-WTmtcBY3AN1M7)
-    - [Learn Bootstrap in One Video](https://www.youtube.com/watch?v=gqOEoUR5RHg)
+    - [Bootstrap](https://getbootstrap.com/)
 
 1. JavaScript
     - [WEB2 - JavaScript | 생활코딩](https://opentutorials.org/course/3085) | [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf)

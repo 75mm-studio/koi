@@ -12,7 +12,7 @@ Simple Project Management Web Application
 1. CSS
     - [WEB2 - CSS | 생활코딩](https://opentutorials.org/course/3086) | [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMAnWgUYiAW2cTzSBywFO75B)
     - [CSS - Style Your Website | Tutorial](https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpNO7ScZFr-WTmtcBY3AN1M7)
-    - [W3.CSS](https://www.w3schools.com/w3css/default.asp) or [Bootstrap](https://getbootstrap.com/)
+    - [Bootstrap](https://getbootstrap.com/)
 
 1. JavaScript
     - [WEB2 - JavaScript | 생활코딩](https://opentutorials.org/course/3085) | [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf)
@@ -20,6 +20,7 @@ Simple Project Management Web Application
 
 1. Node.js
     - [WEB2 - Node.js | 생활코딩](https://opentutorials.org/course/3332) | [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMA9QQX5wqj6ThK7t2tsGxjm)
+    - [Node.js - MySQL | 생활코딩](https://opentutorials.org/course/3347) | [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMAicFFRh8vFFFtLLlNojWUh)
 
 1. MySQL
     - [DATABASE2 - MySQL | 생활코딩](https://opentutorials.org/course/3161) | [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMCgrP_9HL3dAcvdt8qOZxjW)

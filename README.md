@@ -1,6 +1,12 @@
 # koi
 Simple Project Management Web Application
 
+## Style
+
+### Color Scheme
+
+- font-color: #abb2be
+- bg-color: #292d34
 
 ## 웹 애플리케이션 튜토리얼
 

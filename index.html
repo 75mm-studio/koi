@@ -13,7 +13,7 @@
   <body>
 
     <!-- Image and text -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
       <span class="navbar-brand mb-0 h1">
         <img src="img/heart.svg" width="30" height="30" class="d-inline-block align-top" alt="">
         KOI
@@ -33,22 +33,30 @@
     </nav>
 
     <div class="container-fluid">
+      <h4>Project Details</h4>
       <div class="progress">
         <div class="progress-bar bg-success" style="width:40%">
           Done
         </div>
-        <div class="progress-bar bg-warning" style="width:20%">
+        <div class="progress-bar bg-warning" style="width:40%">
           Wip
         </div>
         <div class="progress-bar bg-danger" style="width:20%">
           Ready
         </div>
+        <div class="progress-bar bg-secondary" style="width:10%">
+          Omit
+        </div>
       </div>
+    </div>
 
+    <div class="container-fluid">
       <table class="table table-dark table-striped table-bordered table-hover text-center">
         <thead>
           <tr>
-            <th>Shot</th>
+            <th>Shot Name</th>
+            <th>Shot Clip</th>
+            <th>Shot Info</th>
             <th>Assign</th>
             <th>Status</th>
             <th>Cam & Lens Info</th>
@@ -58,6 +66,8 @@
         <tbody>
           <tr>
             <td>FOO_0010</td>
+            <td><img src="img/FOO_0010.jpg" style="width: 250px" class="img-fluid" alt="FOO_0010"></td>
+            <td>1001 - 1200</td>
             <td>hko</td>
             <td class="bg-danger">Ready</td>
             <td>Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm<br>Master Prime 50mm</td>
@@ -65,6 +75,8 @@
           </tr>
           <tr>
             <td>FOO_0020</td>
+            <td><img src="img/FOO_0020.jpg" style="width: 250px" class="img-fluid" alt="FOO_0020"></td>
+            <td>1001 - 1300</td>
             <td>shjo</td>
             <td class="bg-warning">WIP</td>
             <td>Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm<br>Master Prime 50mm</td>
@@ -72,6 +84,8 @@
           </tr>
           <tr>
             <td>FOO_0030</td>
+            <td><img src="img/FOO_0030.jpg" style="width: 250px" class="img-fluid" alt="FOO_0030"></td>
+            <td>1001 - 1400</td>
             <td>shjo</td>
             <td class="bg-success">Done</td>
             <td>Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm<br>Master Prime 75mm</td>
@@ -79,12 +93,31 @@
           </tr>
           <tr>
             <td>FOO_0040</td>
+            <td><img src="img/FOO_0040.jpg" style="width: 250px" class="img-fluid" alt="FOO_0040"></td>
+            <td>1001 - 1100</td>
             <td>shjo</td>
             <td class="bg-success">Done</td>
             <td>Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm<br>Master Prime 75mm</td>
             <td>Camera Tracking<br>Rotoanimation</td>
           </tr>
-        </tbody>
+          <tr>
+            <td>FOO_0050</td>
+            <td><img src="img/FOO_0050.jpg" style="width: 250px" class="img-fluid" alt="FOO_0050"></td>
+            <td>1001 - 1400</td>
+            <td>shjo</td>
+            <td class="bg-warning">WIP</td>
+            <td>Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm<br>Master Prime 75mm</td>
+            <td>Camera Tracking<br>Rotoanimation</td>
+          </tr>
+          <tr>
+            <td>FOO_0060</td>
+            <td><img src="img/FOO_0060.jpg" style="width: 250px" class="img-fluid" alt="FOO_0060"></td>
+            <td>1001 - 1300</td>
+            <td>shjo</td>
+            <td class="bg-secondary">Omit</td>
+            <td>Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm<br>Master Prime 75mm</td>
+            <td>Camera Tracking<br>Rotoanimation</td>
+          </tr>        </tbody>
       </table>
     </div>
 

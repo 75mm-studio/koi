@@ -1,6 +1,19 @@
 # koi
 Simple Project Management Web Application
 
+## 준비물
+
+1. HTML
+
+1. CSS << Bootstrap Framework
+
+1. JavaScript
+
+1. Node.js
+
+1. MySQL
+
+
 [Preview](https://lazypic.github.io/koi/)
 
 ## 웹 애플리케이션 튜토리얼

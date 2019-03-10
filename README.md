@@ -17,7 +17,7 @@ Simple Project Management Web Application
 
 ![Preview](img/preview.png)
 
-[Preview](https://lazypic.github.io/koi/)
+[Preview Demo : https://lazypic.github.io/koi](https://lazypic.github.io/koi/)
 
 ## 웹 애플리케이션 튜토리얼
 

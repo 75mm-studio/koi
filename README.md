@@ -40,6 +40,9 @@ Simple Project Management Web Application
 
 1. MySQL
     - [DATABASE2 - MySQL | 생활코딩](https://opentutorials.org/course/3161) | [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMCgrP_9HL3dAcvdt8qOZxjW)
+    
+1. PHP & MySQL
+    - [WEB3 - PHP & MySQL | ](https://opentutorials.org/course/3167) | [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMA5836CvWfieEQy0T0ov6Jh)
 
 ## Golang 튜토리얼
 

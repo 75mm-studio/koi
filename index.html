@@ -11,6 +11,8 @@
     <!-- Excel Table Filter CSS -->
     <link rel="stylesheet" href="css/excel-bootstrap-table-filter-style.css">
 
+    <link rel="stylesheet" href="css/fullcalendar.css">
+
     <title>KOI</title>
   </head>
   <body>
@@ -34,144 +36,159 @@
         </ul>
     </nav>
 
-    <div class="accordion" id="accordionExample">
-      <div class="card">
-        <div class="card-header" id="headingOne">
-          <h2 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-              Project Details
-            </button>
-          </h2>
-        </div>
-        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-          <div class="card-body">
-            Koi (鯉, English: /ˈkɔɪ/, Japanese: [koꜜi]) or more specifically nishikigoi (錦鯉, [ɲiɕi̥kiꜜɡoi], literally "brocaded carp"), are colored varieties of Amur carp (Cyprinus rubrofuscus) that are kept for decorative purposes in outdoor koi ponds or water gardens.
-          </div>
-        </div>
-      </div>
-    </div>
+    <ul class="nav nav-pills mb-0" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Shots</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Schedule</a>
+      </li>
+    </ul>
 
-    <div class="card">
-      <div class="progress" style="height: 25px;">
-        <div class="progress-bar bg-success" style="width:40%">
-          Done
-        </div>
-        <div class="progress-bar bg-warning" style="width:40%">
-          Wip
-        </div>
-        <div class="progress-bar bg-danger" style="width:20%">
-          Ready
-        </div>
-        <div class="progress-bar bg-secondary" style="width:10%">
-          Omit
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div class="card">
+          <div class="progress" style="height: 25px;">
+            <div class="progress-bar bg-success" style="width:40%">
+              Done
+            </div>
+            <div class="progress-bar bg-warning" style="width:40%">
+              Wip
+            </div>
+            <div class="progress-bar bg-danger" style="width:20%">
+              Ready
+            </div>
+            <div class="progress-bar bg-secondary" style="width:10%">
+              Omit
+            </div>
+          </div>
+          <table style="font-size: 1.0em" class="table table-dark table-striped table-bordered table-hover text-center">
+            <thead>
+              <tr>
+                <th style="width: 150px">Shot Code</th>
+                <th style="width: 300px">Thumbnail</th>
+                <th style="width: 100px">In</th>
+                <th style="width: 100px">Out</th>
+                <th style="width: 100px">Start</th>
+                <th style="width: 100px">Due</th>
+                <th style="width: 120px">Assign</th>
+                <th style="width: 120px">Status</th>
+                <th>Camera</th>
+                <th>Lens</th>
+                <th>Task</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="align-middle">FOO_0010</td>
+                <td class="align-middle"><img src="img/FOO_0010.jpg" style="width: 250px" class="img-fluid" alt="FOO_0010"></td>
+                <td class="align-middle">1001</td>
+                <td class="align-middle">1200</td>
+                <td class="align-middle">19/03/01</td>
+                <td class="align-middle">19/04/01</td>
+                <td class="align-middle">hko</td>
+                <td class="align-middle bg-danger">Ready</td>
+                <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
+                <td class="align-middle">Master Prime 50mm</td>
+                <td class="align-middle">Camera Tracking</td>
+              </tr>
+              <tr>
+                <td class="align-middle">FOO_0020</td>
+                <td class="align-middle"><img src="img/FOO_0020.jpg" style="width: 250px" class="img-fluid" alt="FOO_0020"></td>
+                <td class="align-middle">1001</td>
+                <td class="align-middle">1300</td>
+                <td class="align-middle">19/03/03</td>
+                <td class="align-middle">19/04/01</td>
+                <td class="align-middle">shjo</td>
+                <td class="align-middle bg-warning">WIP</td>
+                <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
+                <td class="align-middle">Master Prime 50mm</td>
+                <td class="align-middle">Camera Tracking</td>
+              </tr>
+              <tr>
+                <td class="align-middle">FOO_0030</td>
+                <td class="align-middle"><img src="img/FOO_0030.jpg" style="width: 250px" class="img-fluid" alt="FOO_0030"></td>
+                <td class="align-middle">1001</td>
+                <td class="align-middle">1400</td>
+                <td class="align-middle">19/03/03</td>
+                <td class="align-middle">19/04/01</td>
+                <td class="align-middle">shjo</td>
+                <td class="align-middle bg-success">Done</td>
+                <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
+                <td class="align-middle">Master Prime 50mm</td>
+                <td class="align-middle">Camera Tracking<br>Rotoanimation</td>
+              </tr>
+              <tr>
+                <td class="align-middle">FOO_0040</td>
+                <td class="align-middle"><img src="img/FOO_0040.jpg" style="width: 250px" class="img-fluid" alt="FOO_0040"></td>
+                <td class="align-middle">1001</td>
+                <td class="align-middle">1250</td>
+                <td class="align-middle">19/03/02</td>
+                <td class="align-middle">19/04/01</td>
+                <td class="align-middle">shjo</td>
+                <td class="align-middle bg-success">Done</td>
+                <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
+                <td class="align-middle">Master Prime 50mm</td>
+                <td class="align-middle">Camera Tracking<br>Rotoanimation</td>
+              </tr>
+              <tr>
+                <td class="align-middle">FOO_0050</td>
+                <td class="align-middle"><img src="img/FOO_0050.jpg" style="width: 250px" class="img-fluid" alt="FOO_0050"></td>
+                <td class="align-middle">1001</td>
+                <td class="align-middle">1400</td>
+                <td class="align-middle">19/03/02</td>
+                <td class="align-middle">19/04/01</td>
+                <td class="align-middle">shjo</td>
+                <td class="align-middle bg-warning">WIP</td>
+                <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
+                <td class="align-middle">Master Prime 50mm</td>
+                <td class="align-middle">Camera Tracking<br>Rotoanimation</td>
+              </tr>
+              <tr>
+                <td class="align-middle">FOO_0060</td>
+                <td class="align-middle"><img src="img/FOO_0060.jpg" style="width: 250px" class="img-fluid" alt="FOO_0060"></td>
+                <td class="align-middle">1001</td>
+                <td class="align-middle">1300</td>
+                <td class="align-middle">19/02/28</td>
+                <td class="align-middle">19/04/01</td>
+                <td class="align-middle">shjo</td>
+                <td class="align-middle bg-secondary">Omit</td>
+                <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
+                <td class="align-middle">Master Prime 50mm</td>
+                <td class="align-middle">Camera Tracking<br>Rotoanimation</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      <table style="font-size: 1.0em" class="table table-dark table-striped table-bordered table-hover text-center">
-        <thead>
-          <tr>
-            <th style="width: 150px">Shot Code</th>
-            <th style="width: 300px">Thumbnail</th>
-            <th style="width: 100px">In</th>
-            <th style="width: 100px">Out</th>
-            <th style="width: 100px">Start</th>
-            <th style="width: 100px">Due</th>
-            <th style="width: 120px">Assign</th>
-            <th style="width: 120px">Status</th>
-            <th>Camera</th>
-            <th>Lens</th>
-            <th>Task</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="align-middle">FOO_0010</td>
-            <td class="align-middle"><img src="img/FOO_0010.jpg" style="width: 250px" class="img-fluid" alt="FOO_0010"></td>
-            <td class="align-middle">1001</td>
-            <td class="align-middle">1200</td>
-            <td class="align-middle">19/03/01</td>
-            <td class="align-middle">19/04/01</td>
-            <td class="align-middle">hko</td>
-            <td class="align-middle bg-danger">Ready</td>
-            <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
-            <td class="align-middle">Master Prime 50mm</td>
-            <td class="align-middle">Camera Tracking</td>
-          </tr>
-          <tr>
-            <td class="align-middle">FOO_0020</td>
-            <td class="align-middle"><img src="img/FOO_0020.jpg" style="width: 250px" class="img-fluid" alt="FOO_0020"></td>
-            <td class="align-middle">1001</td>
-            <td class="align-middle">1300</td>
-            <td class="align-middle">19/03/03</td>
-            <td class="align-middle">19/04/01</td>
-            <td class="align-middle">shjo</td>
-            <td class="align-middle bg-warning">WIP</td>
-            <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
-            <td class="align-middle">Master Prime 50mm</td>
-            <td class="align-middle">Camera Tracking</td>
-          </tr>
-          <tr>
-            <td class="align-middle">FOO_0030</td>
-            <td class="align-middle"><img src="img/FOO_0030.jpg" style="width: 250px" class="img-fluid" alt="FOO_0030"></td>
-            <td class="align-middle">1001</td>
-            <td class="align-middle">1400</td>
-            <td class="align-middle">19/03/03</td>
-            <td class="align-middle">19/04/01</td>
-            <td class="align-middle">shjo</td>
-            <td class="align-middle bg-success">Done</td>
-            <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
-            <td class="align-middle">Master Prime 50mm</td>
-            <td class="align-middle">Camera Tracking<br>Rotoanimation</td>
-          </tr>
-          <tr>
-            <td class="align-middle">FOO_0040</td>
-            <td class="align-middle"><img src="img/FOO_0040.jpg" style="width: 250px" class="img-fluid" alt="FOO_0040"></td>
-            <td class="align-middle">1001</td>
-            <td class="align-middle">1250</td>
-            <td class="align-middle">19/03/02</td>
-            <td class="align-middle">19/04/01</td>
-            <td class="align-middle">shjo</td>
-            <td class="align-middle bg-success">Done</td>
-            <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
-            <td class="align-middle">Master Prime 50mm</td>
-            <td class="align-middle">Camera Tracking<br>Rotoanimation</td>
-          </tr>
-          <tr>
-            <td class="align-middle">FOO_0050</td>
-            <td class="align-middle"><img src="img/FOO_0050.jpg" style="width: 250px" class="img-fluid" alt="FOO_0050"></td>
-            <td class="align-middle">1001</td>
-            <td class="align-middle">1400</td>
-            <td class="align-middle">19/03/02</td>
-            <td class="align-middle">19/04/01</td>
-            <td class="align-middle">shjo</td>
-            <td class="align-middle bg-warning">WIP</td>
-            <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
-            <td class="align-middle">Master Prime 50mm</td>
-            <td class="align-middle">Camera Tracking<br>Rotoanimation</td>
-          </tr>
-          <tr>
-            <td class="align-middle">FOO_0060</td>
-            <td class="align-middle"><img src="img/FOO_0060.jpg" style="width: 250px" class="img-fluid" alt="FOO_0060"></td>
-            <td class="align-middle">1001</td>
-            <td class="align-middle">1300</td>
-            <td class="align-middle">19/02/28</td>
-            <td class="align-middle">19/04/01</td>
-            <td class="align-middle">shjo</td>
-            <td class="align-middle bg-secondary">Omit</td>
-            <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
-            <td class="align-middle">Master Prime 50mm</td>
-            <td class="align-middle">Camera Tracking<br>Rotoanimation</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="card">
+          <div id='calendar'></div>
+        </div>
+      </div>
     </div>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="js/jquery-3.3.1.slim.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/moment.js"></script>
+  <script src="js/fullcalendar.js"></script>
+
   <script src="js/excel-bootstrap-table-filter-bundle.min.js"></script>
   <script>
     $('table').excelTableFilter();
+    $(function() {
+
+  // page is now ready, initialize the calendar...
+
+    $('#calendar').fullCalendar({
+      // put your options and callbacks here
+    })
+
+  });
   </script>
+
 
   </body>
 </html>

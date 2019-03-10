@@ -15,7 +15,9 @@ Simple Project Management Web Application
 
 - Example Images from [Tears of Steel](https://media.xiph.org/tearsofsteel/)
 
-[Preview](https://lazypic.github.io/koi/)
+![Preview](img/preview.png)
+
+[Preview Demo : https://lazypic.github.io/koi](https://lazypic.github.io/koi/)
 
 ## 웹 애플리케이션 튜토리얼
 

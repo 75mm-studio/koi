@@ -13,6 +13,101 @@
 
     <link rel="stylesheet" href="css/fullcalendar.css">
 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/moment.js"></script>
+    <script src="js/fullcalendar.js"></script>
+
+    <script src="js/excel-bootstrap-table-filter-bundle.min.js"></script>
+
+    <script>
+
+      $(document).ready(function() {
+
+        $('#calendar').fullCalendar({
+          header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay,listWeek'
+          },
+          defaultDate: '2019-01-12',
+          navLinks: true, // can click day/week names to navigate views
+          editable: true,
+          eventLimit: true, // allow "more" link when too many events
+          events: [
+            {
+              title: 'All Day Event',
+              start: '2019-01-01',
+            },
+            {
+              title: 'Long Event',
+              start: '2019-01-07',
+              end: '2019-01-10'
+            },
+            {
+              id: 999,
+              title: 'Repeating Event',
+              start: '2019-01-09T16:00:00'
+            },
+            {
+              id: 999,
+              title: 'Repeating Event',
+              start: '2019-01-16T16:00:00'
+            },
+            {
+              title: 'Conference',
+              start: '2019-01-11',
+              end: '2019-01-13'
+            },
+            {
+              title: 'Meeting',
+              start: '2019-01-12T10:30:00',
+              end: '2019-01-12T12:30:00'
+            },
+            {
+              title: 'Lunch',
+              start: '2019-01-12T12:00:00'
+            },
+            {
+              title: 'Meeting',
+              start: '2019-01-12T14:30:00'
+            },
+            {
+              title: 'Happy Hour',
+              start: '2019-01-12T17:30:00'
+            },
+            {
+              title: 'Dinner',
+              start: '2019-01-12T20:00:00'
+            },
+            {
+              title: 'Birthday Party',
+              start: '2019-01-13T07:00:00'
+            },
+            {
+              title: 'Click for Google',
+              url: 'http://google.com/',
+              start: '2019-01-28'
+            }
+          ]
+        });
+
+      });
+
+    </script>
+
+    <style>
+      #calendar {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0;
+        font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+        font-size: 14px;
+      }
+    </style>
+
     <title>KOI</title>
   </head>
   <body>
@@ -46,7 +141,7 @@
     </ul>
 
     <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      <div class="tab-pane show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
         <div class="card">
           <div class="progress" style="height: 25px;">
             <div class="progress-bar bg-success" style="width:40%">
@@ -62,7 +157,7 @@
               Omit
             </div>
           </div>
-          <table style="font-size: 1.0em" class="table table-dark table-striped table-bordered table-hover text-center">
+          <table style="font-size: 1.0em" class="table table-dark table-striped table-bordered table-hover text-center mb-0">
             <thead>
               <tr>
                 <th style="width: 150px">Shot Code</th>
@@ -161,32 +256,14 @@
           </table>
         </div>
       </div>
-      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-        <div class="card">
-          <div id='calendar'></div>
-        </div>
+      <div class="tab-pane fade active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div id="calendar"></div>
       </div>
     </div>
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="js/jquery-3.3.1.slim.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
 
-  <script src="js/moment.js"></script>
-  <script src="js/fullcalendar.js"></script>
-
-  <script src="js/excel-bootstrap-table-filter-bundle.min.js"></script>
   <script>
     $('table').excelTableFilter();
-    $(function() {
-
-  // page is now ready, initialize the calendar...
-
-    $('#calendar').fullCalendar({
-      // put your options and callbacks here
-    })
-
-  });
   </script>
 
 

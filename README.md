@@ -7,9 +7,9 @@ Simple Project Management Web Application
 
 1. CSS << Bootstrap Framework
 
-1. JavaScript
+1. JavaScript << JQuery
 
-1. Node.js
+1. PHP
 
 1. MySQL
 

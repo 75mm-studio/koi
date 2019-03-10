@@ -34,13 +34,14 @@ Simple Project Management Web Application
     - [WEB2 - JavaScript | 생활코딩](https://opentutorials.org/course/3085) | [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf)
     - [Javascript - Programming Language | Tutorial](https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpPQbcrA-SzALJeFm23tPrAI)
 
-1. Node.js
-    - [WEB2 - Node.js | 생활코딩](https://opentutorials.org/course/3332) | [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMA9QQX5wqj6ThK7t2tsGxjm)
-    - [Node.js - MySQL | 생활코딩](https://opentutorials.org/course/3347) | [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMAicFFRh8vFFFtLLlNojWUh)
+1. PHP
+    -[WEB2 - PHP](https://opentutorials.org/course/3130) | [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMAMMNByX8Bf1BkVrShBhj1I)
+
 
 1. MySQL
     - [DATABASE2 - MySQL | 생활코딩](https://opentutorials.org/course/3161) | [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMCgrP_9HL3dAcvdt8qOZxjW)
-    
+
+
 1. PHP & MySQL
     - [WEB3 - PHP & MySQL | ](https://opentutorials.org/course/3167) | [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMA5836CvWfieEQy0T0ov6Jh)
 

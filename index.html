@@ -34,42 +34,51 @@
         </ul>
     </nav>
 
-    <div class="card">
-      <div class="card-header">
-        Project Details
-      </div>
-
-      <div class="card-body">
-        <div class="progress" style="height: 25px;">
-          <div class="progress-bar bg-success" style="width:40%">
-            Done
-          </div>
-          <div class="progress-bar bg-warning" style="width:40%">
-            Wip
-          </div>
-          <div class="progress-bar bg-danger" style="width:20%">
-            Ready
-          </div>
-          <div class="progress-bar bg-secondary" style="width:10%">
-            Omit
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Project Details
+            </button>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            Koi (鯉, English: /ˈkɔɪ/, Japanese: [koꜜi]) or more specifically nishikigoi (錦鯉, [ɲiɕi̥kiꜜɡoi], literally "brocaded carp"), are colored varieties of Amur carp (Cyprinus rubrofuscus) that are kept for decorative purposes in outdoor koi ponds or water gardens.
           </div>
         </div>
       </div>
     </div>
 
     <div class="card">
+      <div class="progress" style="height: 25px;">
+        <div class="progress-bar bg-success" style="width:40%">
+          Done
+        </div>
+        <div class="progress-bar bg-warning" style="width:40%">
+          Wip
+        </div>
+        <div class="progress-bar bg-danger" style="width:20%">
+          Ready
+        </div>
+        <div class="progress-bar bg-secondary" style="width:10%">
+          Omit
+        </div>
+      </div>
       <table style="font-size: 1.0em" class="table table-dark table-striped table-bordered table-hover text-center">
         <thead>
           <tr>
             <th style="width: 150px">Shot Code</th>
-            <th>Thumbnail</th>
-            <th>In</th>
-            <th>Out</th>
+            <th style="width: 300px">Thumbnail</th>
+            <th style="width: 100px">In</th>
+            <th style="width: 100px">Out</th>
             <th style="width: 100px">Start</th>
             <th style="width: 100px">Due</th>
             <th style="width: 120px">Assign</th>
             <th style="width: 120px">Status</th>
-            <th>Cam & Lens Info</th>
+            <th>Camera</th>
+            <th>Lens</th>
             <th>Task</th>
           </tr>
         </thead>
@@ -83,7 +92,8 @@
             <td class="align-middle">19/04/01</td>
             <td class="align-middle">hko</td>
             <td class="align-middle bg-danger">Ready</td>
-            <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm<br>Master Prime 50mm</td>
+            <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
+            <td class="align-middle">Master Prime 50mm</td>
             <td class="align-middle">Camera Tracking</td>
           </tr>
           <tr>
@@ -95,7 +105,8 @@
             <td class="align-middle">19/04/01</td>
             <td class="align-middle">shjo</td>
             <td class="align-middle bg-warning">WIP</td>
-            <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm<br>Master Prime 50mm</td>
+            <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
+            <td class="align-middle">Master Prime 50mm</td>
             <td class="align-middle">Camera Tracking</td>
           </tr>
           <tr>
@@ -107,7 +118,8 @@
             <td class="align-middle">19/04/01</td>
             <td class="align-middle">shjo</td>
             <td class="align-middle bg-success">Done</td>
-            <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm<br>Master Prime 75mm</td>
+            <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
+            <td class="align-middle">Master Prime 50mm</td>
             <td class="align-middle">Camera Tracking<br>Rotoanimation</td>
           </tr>
           <tr>
@@ -119,7 +131,8 @@
             <td class="align-middle">19/04/01</td>
             <td class="align-middle">shjo</td>
             <td class="align-middle bg-success">Done</td>
-            <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm<br>Master Prime 75mm</td>
+            <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
+            <td class="align-middle">Master Prime 50mm</td>
             <td class="align-middle">Camera Tracking<br>Rotoanimation</td>
           </tr>
           <tr>
@@ -131,7 +144,8 @@
             <td class="align-middle">19/04/01</td>
             <td class="align-middle">shjo</td>
             <td class="align-middle bg-warning">WIP</td>
-            <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm<br>Master Prime 75mm</td>
+            <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
+            <td class="align-middle">Master Prime 50mm</td>
             <td class="align-middle">Camera Tracking<br>Rotoanimation</td>
           </tr>
           <tr>
@@ -143,7 +157,8 @@
             <td class="align-middle">19/04/01</td>
             <td class="align-middle">shjo</td>
             <td class="align-middle bg-secondary">Omit</td>
-            <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm<br>Master Prime 75mm</td>
+            <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
+            <td class="align-middle">Master Prime 50mm</td>
             <td class="align-middle">Camera Tracking<br>Rotoanimation</td>
           </tr>
         </tbody>

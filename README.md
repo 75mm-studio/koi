@@ -35,7 +35,7 @@ Simple Project Management Web Application
     - [Javascript - Programming Language | Tutorial](https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpPQbcrA-SzALJeFm23tPrAI)
 
 1. PHP
-    -[WEB2 - PHP](https://opentutorials.org/course/3130) | [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMAMMNByX8Bf1BkVrShBhj1I)
+    - [WEB2 - PHP | 생활코딩](https://opentutorials.org/course/3130) | [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMAMMNByX8Bf1BkVrShBhj1I)
 
 
 1. MySQL
@@ -43,7 +43,7 @@ Simple Project Management Web Application
 
 
 1. PHP & MySQL
-    - [WEB3 - PHP & MySQL | ](https://opentutorials.org/course/3167) | [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMA5836CvWfieEQy0T0ov6Jh)
+    - [WEB3 - PHP & MySQL | 생활코딩](https://opentutorials.org/course/3167) | [Youtube 자동재생](https://www.youtube.com/playlist?list=PLuHgQVnccGMA5836CvWfieEQy0T0ov6Jh)
 
 ## Golang 튜토리얼
 

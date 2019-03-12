@@ -264,16 +264,7 @@
               url: 'http://google.com/',
               start: '2019-01-28'
             }
-          ]
-        });
-
-      });
-
-    </script>
-    <script>
-      $('table').excelTableFilter();
-    </script>
-    <script>
+          ],
 
         $('table').Tabledit({
             url: window.location.href,
@@ -285,9 +276,14 @@
                 identifier: [0, 'id'],
                 editable: [[6, 'car'], [7, 'status', '{"1": "Ready", "2": "Wip", "3": "Done", "4": "Omit"}']]
             }
+          });
+
+        $('table').excelTableFilter();
 
         });
 
+      });
     </script>
+
   </body>
 </html>

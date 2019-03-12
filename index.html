@@ -23,16 +23,8 @@
         font-size: 14px;
       }
     </style>
-    <style>
-    .table.user-select-none {
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-    }
-    </style>
+
+
 
     <title>KOI</title>
   </head>
@@ -193,7 +185,6 @@
       </div>
     </div>
 
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -279,26 +270,23 @@
       });
 
     </script>
+    <script>
+      $('table').excelTableFilter();
+    </script>
+    <script>
 
-  <script>
-    $('table').excelTableFilter();
-  </script>
+        $('table').Tabledit({
+            url: window.location.href,
+            eventType: 'dblclick',
+            editButton: false,
+            deleteButton: false,
 
-  <script>
-    $(document).ready(function() {
-      $('table').Tabledit({
-          url: window.location.href,
-          eventType: 'dblclick',
-          editButton: false,
-          deleteButton: false,
+            columns: {
+                identifier: [0, 'id'],
+                editable: [[6, 'car'], [7, 'status', '{"1": "Ready", "2": "Wip", "3": "Done", "4": "Omit"}']]
+            }
+        });
 
-          columns: {
-              identifier: [0, 'id'],
-              editable: [[6, 'car'], [7, 'status', '{"1": "Ready", "2": "Wip", "3": "Done", "4": "Omit"}']]
-          }
-      });
-    });
-  </script>
-
+    </script>
   </body>
 </html>

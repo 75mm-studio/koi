@@ -266,23 +266,27 @@
             }
           ],
 
-        $('table').Tabledit({
-            url: window.location.href,
-            eventType: 'dblclick',
-            editButton: false,
-            deleteButton: false,
 
-            columns: {
-                identifier: [0, 'id'],
-                editable: [[6, 'car'], [7, 'status', '{"1": "Ready", "2": "Wip", "3": "Done", "4": "Omit"}']]
-            }
-          });
-
-        $('table').excelTableFilter();
 
         });
 
       });
+    </script>
+    <script>
+      $('table').Tabledit({
+          url: window.location.href,
+          eventType: 'dblclick',
+          editButton: false,
+          deleteButton: false,
+
+          columns: {
+              identifier: [0, 'id'],
+              editable: [[6, 'car'], [7, 'status', '{"1": "Ready", "2": "Wip", "3": "Done", "4": "Omit"}']]
+          }
+        });
+    </script>
+    <script>
+      $('table').excelTableFilter();
     </script>
 
   </body>

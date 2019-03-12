@@ -13,90 +13,6 @@
 
     <link rel="stylesheet" href="css/fullcalendar.css">
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-
-    <script src="js/moment.js"></script>
-    <script src="js/fullcalendar.js"></script>
-
-    <script src="js/excel-bootstrap-table-filter-bundle.min.js"></script>
-
-    <script>
-
-      $(document).ready(function() {
-
-        $('#calendar').fullCalendar({
-          header: {
-            left: 'prev,next today',
-            center: 'title',
-            right: 'month,agendaWeek,agendaDay,listWeek'
-          },
-          defaultDate: '2019-01-12',
-          navLinks: true, // can click day/week names to navigate views
-          editable: true,
-          eventLimit: true, // allow "more" link when too many events
-          events: [
-            {
-              title: 'All Day Event',
-              start: '2019-01-01',
-            },
-            {
-              title: 'Long Event',
-              start: '2019-01-07',
-              end: '2019-01-10'
-            },
-            {
-              id: 999,
-              title: 'Repeating Event',
-              start: '2019-01-09T16:00:00'
-            },
-            {
-              id: 999,
-              title: 'Repeating Event',
-              start: '2019-01-16T16:00:00'
-            },
-            {
-              title: 'Conference',
-              start: '2019-01-11',
-              end: '2019-01-13'
-            },
-            {
-              title: 'Meeting',
-              start: '2019-01-12T10:30:00',
-              end: '2019-01-12T12:30:00'
-            },
-            {
-              title: 'Lunch',
-              start: '2019-01-12T12:00:00'
-            },
-            {
-              title: 'Meeting',
-              start: '2019-01-12T14:30:00'
-            },
-            {
-              title: 'Happy Hour',
-              start: '2019-01-12T17:30:00'
-            },
-            {
-              title: 'Dinner',
-              start: '2019-01-12T20:00:00'
-            },
-            {
-              title: 'Birthday Party',
-              start: '2019-01-13T07:00:00'
-            },
-            {
-              title: 'Click for Google',
-              url: 'http://google.com/',
-              start: '2019-01-28'
-            }
-          ]
-        });
-
-      });
-
-    </script>
 
     <style>
       #calendar {
@@ -106,6 +22,16 @@
         font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
         font-size: 14px;
       }
+    </style>
+    <style>
+    .table.user-select-none {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
     </style>
 
     <title>KOI</title>
@@ -268,10 +194,111 @@
     </div>
 
 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/moment.js"></script>
+    <script src="js/fullcalendar.js"></script>
+
+    <script src="js/excel-bootstrap-table-filter-bundle.min.js"></script>
+    <script src="js/jQuery-Tabledit/jquery.tabledit.min.js"></script>
+
+    <script>
+
+      $(document).ready(function() {
+
+        $('#calendar').fullCalendar({
+          header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay,listWeek'
+          },
+          defaultDate: '2019-01-12',
+          navLinks: true, // can click day/week names to navigate views
+          editable: true,
+          eventLimit: true, // allow "more" link when too many events
+          events: [
+            {
+              title: 'All Day Event',
+              start: '2019-01-01',
+            },
+            {
+              title: 'Long Event',
+              start: '2019-01-07',
+              end: '2019-01-10'
+            },
+            {
+              id: 999,
+              title: 'Repeating Event',
+              start: '2019-01-09T16:00:00'
+            },
+            {
+              id: 999,
+              title: 'Repeating Event',
+              start: '2019-01-16T16:00:00'
+            },
+            {
+              title: 'Conference',
+              start: '2019-01-11',
+              end: '2019-01-13'
+            },
+            {
+              title: 'Meeting',
+              start: '2019-01-12T10:30:00',
+              end: '2019-01-12T12:30:00'
+            },
+            {
+              title: 'Lunch',
+              start: '2019-01-12T12:00:00'
+            },
+            {
+              title: 'Meeting',
+              start: '2019-01-12T14:30:00'
+            },
+            {
+              title: 'Happy Hour',
+              start: '2019-01-12T17:30:00'
+            },
+            {
+              title: 'Dinner',
+              start: '2019-01-12T20:00:00'
+            },
+            {
+              title: 'Birthday Party',
+              start: '2019-01-13T07:00:00'
+            },
+            {
+              title: 'Click for Google',
+              url: 'http://google.com/',
+              start: '2019-01-28'
+            }
+          ]
+        });
+
+      });
+
+    </script>
+
   <script>
     $('table').excelTableFilter();
   </script>
 
+  <script>
+    $(document).ready(function() {
+      $('table').Tabledit({
+          url: window.location.href,
+          eventType: 'dblclick',
+          editButton: false,
+          deleteButton: false,
+
+          columns: {
+              identifier: [0, 'id'],
+              editable: [[6, 'car'], [7, 'status', '{"1": "Ready", "2": "Wip", "3": "Done", "4": "Omit"}']]
+          }
+      });
+    });
+  </script>
 
   </body>
 </html>

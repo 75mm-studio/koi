@@ -15,7 +15,7 @@ Simple Project Management Web Application
 
 - Example Images from [Tears of Steel](https://media.xiph.org/tearsofsteel/)
 
-## WIP
+## UI
 
 ![Preview](img/preview2.png)
 

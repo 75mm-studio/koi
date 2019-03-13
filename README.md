@@ -1,19 +1,21 @@
 # koi
 Simple Project Management Web Application
 
-## 준비물
+## Language
 
 1. HTML
 
-1. CSS << Bootstrap Framework
+1. CSS
 
-1. JavaScript << JQuery
+1. JavaScript
 
-1. PHP
+1. [Go](https://golang.org/)
 
-1. MySQL
+1. [MongoDB](https://www.mongodb.com/)
 
 - Example Images from [Tears of Steel](https://media.xiph.org/tearsofsteel/)
+
+## WIP
 
 ![Preview](img/preview2.png)
 

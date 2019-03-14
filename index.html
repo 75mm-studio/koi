@@ -81,6 +81,7 @@
           <table style="font-size: 1.0em" class="table table-dark table-striped table-bordered table-hover text-center mb-0">
             <thead>
               <tr>
+                <th style="width: 150px">Show</th>
                 <th style="width: 150px">Shot Code</th>
                 <th style="width: 300px">Thumbnail</th>
                 <th style="width: 100px">In</th>
@@ -96,7 +97,8 @@
             </thead>
             <tbody>
               <tr>
-                <td class="align-middle">FOO_0010</td>
+                <td class="align-middle">TOS</td>
+                <td class="align-middle"><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">FOO_0010</button></td>
                 <td class="align-middle"><img src="img/FOO_0010.jpg" style="width: 250px" class="img-fluid" alt="FOO_0010"></td>
                 <td class="align-middle">1001</td>
                 <td class="align-middle">1200</td>
@@ -109,7 +111,8 @@
                 <td class="align-middle">Camera Tracking</td>
               </tr>
               <tr>
-                <td class="align-middle">FOO_0020</td>
+                <td class="align-middle">TOS</td>
+                <td class="align-middle"><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">FOO_0020</button></td>
                 <td class="align-middle"><img src="img/FOO_0020.jpg" style="width: 250px" class="img-fluid" alt="FOO_0020"></td>
                 <td class="align-middle">1001</td>
                 <td class="align-middle">1300</td>
@@ -122,7 +125,8 @@
                 <td class="align-middle">Camera Tracking</td>
               </tr>
               <tr>
-                <td class="align-middle">FOO_0030</td>
+                <td class="align-middle">TOS</td>
+                <td class="align-middle"><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">FOO_0030</button></td>
                 <td class="align-middle"><img src="img/FOO_0030.jpg" style="width: 250px" class="img-fluid" alt="FOO_0030"></td>
                 <td class="align-middle">1001</td>
                 <td class="align-middle">1400</td>
@@ -135,7 +139,8 @@
                 <td class="align-middle">Camera Tracking<br>Rotoanimation</td>
               </tr>
               <tr>
-                <td class="align-middle">FOO_0040</td>
+                <td class="align-middle">TOS</td>
+                <td class="align-middle"><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">FOO_0040</button></td>
                 <td class="align-middle"><img src="img/FOO_0040.jpg" style="width: 250px" class="img-fluid" alt="FOO_0040"></td>
                 <td class="align-middle">1001</td>
                 <td class="align-middle">1250</td>
@@ -148,7 +153,8 @@
                 <td class="align-middle">Camera Tracking<br>Rotoanimation</td>
               </tr>
               <tr>
-                <td class="align-middle">FOO_0050</td>
+                <td class="align-middle">TOS</td>
+                <td class="align-middle"><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">FOO_0050</button></td>
                 <td class="align-middle"><img src="img/FOO_0050.jpg" style="width: 250px" class="img-fluid" alt="FOO_0050"></td>
                 <td class="align-middle">1001</td>
                 <td class="align-middle">1400</td>
@@ -161,7 +167,8 @@
                 <td class="align-middle">Camera Tracking<br>Rotoanimation</td>
               </tr>
               <tr>
-                <td class="align-middle">FOO_0060</td>
+                <td class="align-middle">TOS</td>
+                <td class="align-middle"><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">FOO_0060</button></td>
                 <td class="align-middle"><img src="img/FOO_0060.jpg" style="width: 250px" class="img-fluid" alt="FOO_0060"></td>
                 <td class="align-middle">1001</td>
                 <td class="align-middle">1300</td>
@@ -182,6 +189,17 @@
       </div>
       <div class="tab-pane fade" id="pills-assets" role="tabpanel" aria-labelledby="pills-assets-tab">
         <h1>ASSETS</h1>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            Shot Folder Opened
+          </div>
+        </div>
       </div>
     </div>
 
@@ -281,12 +299,15 @@
 
           columns: {
               identifier: [0, 'id'],
-              editable: [[6, 'car'], [7, 'status', '{"1": "Ready", "2": "Wip", "3": "Done", "4": "Omit"}']]
+              editable: [[7, 'assign'], [8, 'status', '{"1": "Ready", "2": "Wip", "3": "Done", "4": "Omit"}']]
           }
         });
     </script>
     <script>
       $('table').excelTableFilter();
+    </script>
+    <script>
+      $('.alert').alert();
     </script>
 
   </body>

@@ -13,7 +13,6 @@
 
     <link rel="stylesheet" href="css/fullcalendar.css">
 
-
     <style>
       #calendar {
         max-width: 1000px;
@@ -24,8 +23,6 @@
       }
     </style>
 
-
-
     <title>KOI</title>
   </head>
   <body>
@@ -35,6 +32,7 @@
       <span class="navbar-brand m-1 h1">
           KOI
       </span>
+      <!-- Project dropdown
         <ul class="navbar-nav mr-auto">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle m-1" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -47,6 +45,7 @@
             </div>
           </li>
         </ul>
+         -->
     </nav>
 
     <ul class="nav nav-pills m-2" id="pills-tab" role="tablist">
@@ -59,11 +58,14 @@
       <li class="nav-item">
         <a class="nav-link" id="pills-assets-tab" data-toggle="pill" href="#pills-assets" role="tab" aria-controls="pills-assets" aria-selected="false">Assets</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-camdb-tab" data-toggle="pill" href="#pills-camdb" role="tab" aria-controls="pills-camdb" aria-selected="false">Camera Database</a>
+      </li>
     </ul>
 
     <div class="tab-content" id="pills-tabContent">
       <div class="tab-pane show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-        <div class="card">
+        <div class="card" style="width: 150rem;">
           <div class="progress" style="height: 25px;">
             <div class="progress-bar bg-success" style="width:40%">
               Done
@@ -90,7 +92,7 @@
                 <th style="width: 120px">Due</th>
                 <th style="width: 120px">Assign</th>
                 <th style="width: 120px">Status</th>
-                <th style="width: 200px">Preview</th>
+                <th style="width: 220px">Preview</th>
                 <th>Camera</th>
                 <th>Lens</th>
                 <th>Task</th>
@@ -121,7 +123,7 @@
                 <td class="align-middle">2019-03-03</td>
                 <td class="align-middle">2019-04-01</td>
                 <td class="align-middle">shjo</td>
-                <td class="align-middle bg-warning">WIP</td>
+                <td class="align-middle bg-warning">Wip</td>
                 <td class="align-middle"><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">FOO_0020_v02.mov</button></td>
                 <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
                 <td class="align-middle">Master Prime 50mm</td>
@@ -166,13 +168,13 @@
                 <td class="align-middle">2019-03-02</td>
                 <td class="align-middle">2019-04-01</td>
                 <td class="align-middle">shjo</td>
-                <td class="align-middle bg-warning">WIP</td>
+                <td class="align-middle bg-warning">Wip</td>
                 <td class="align-middle"><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">FOO_0050_v01.mov</button></td>
                 <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
                 <td class="align-middle">Master Prime 50mm</td>
                 <td class="align-middle">Camera Tracking<br>Rotoanimation</td>
               </tr>
-              <tr>
+              <tr class="bg-secondary">
                 <td class="align-middle">TOS</td>
                 <td class="align-middle"><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">FOO_0060</button></td>
                 <td class="align-middle"><img src="img/FOO_0060.jpg" style="width: 250px" class="img-fluid" alt="FOO_0060"></td>
@@ -191,11 +193,14 @@
           </table>
         </div>
       </div>
-      <div class="tab-pane fade active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <div class="tab-pane" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
         <div id="calendar"></div>
       </div>
-      <div class="tab-pane fade" id="pills-assets" role="tabpanel" aria-labelledby="pills-assets-tab">
+      <div class="tab-pane" id="pills-assets" role="tabpanel" aria-labelledby="pills-assets-tab">
         <h1>ASSETS</h1>
+      </div>
+      <div class="tab-pane" id="pills-camdb" role="tabpanel" aria-labelledby="pills-camdb-tab">
+        <h1>Camera Database</h1>
       </div>
     </div>
 

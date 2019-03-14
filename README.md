@@ -13,13 +13,14 @@ Simple Project Management Web Application
 
 1. [MongoDB](https://www.mongodb.com/)
 
-- Example Images from [Tears of Steel](https://media.xiph.org/tearsofsteel/)
 
 ## UI
 
 ![Preview](img/preview2.png)
 
 [Preview Demo : https://lazypic.github.io/koi](https://lazypic.github.io/koi/)
+
+- Example Images from [Tears of Steel](https://media.xiph.org/tearsofsteel/)
 
 ## 웹 애플리케이션 튜토리얼
 

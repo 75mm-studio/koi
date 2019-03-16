@@ -50,7 +50,11 @@ Simple Project Management Web Application
 
 ## Golang 튜토리얼
 
-[Introduction to the Go Programming Language](https://pythonprogramming.net/go/introduction-go-language-programming-tutorial/)
+1. [Learn How To Code: Google's Go (golang) Programming Language](https://www.udemy.com/learn-how-to-code/)
+
+1. [Web Development w/ Google’s Go (golang) Programming Language](https://www.udemy.com/go-programming-language/)
+
+1. [Introduction to the Go Programming Language](https://pythonprogramming.net/go/introduction-go-language-programming-tutorial/)
 
 ## Golang MongoDB Tutorial
 

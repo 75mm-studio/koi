@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/pikaday.css" rel="stylesheet">
+    <link href="css/handsontable.full.min.css" rel="stylesheet" media="screen">
+
+    <style>
+      .currentRow {
+        background-color: #E7E8EF !important;
+      }
+
+      .currentCol {
+        background-color: #E7E8EF !important;
+      }
+
+    </style>
+
+    <title>KOI2</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <span class="navbar-brand mb-0 h1">KOI</span>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-primary mr-sm-2" type="button" onclick="location.href='index.html' ">Shot DB</button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="location.href='gantt.html'">Gantt Chart</button>
+        <button class="btn btn-outline-danger my-2 my-sm-0" type="button" onclick="location.href='camdb.html'">Camera DB</button>
+      </form>
+    </nav>
+
+    <div id="gantt"></div>
+
+    <script src="js/handsontable.full.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/pikaday.js"></script>
+
+    <script type="text/javascript" src="data/test.js"></script>
+
+    <script>
+
+      var example1 = document.getElementById('gantt');
+      var dataObj = [
+        {
+          startDate: '1/5/2015',
+          endDate: '1/20/2015',
+          additionalData: {label: 'Label 1'}
+        },
+        {
+          startDate: '1/11/2015',
+          endDate: '1/29/2015',
+          additionalData: {label: 'Label 2'}
+        },
+        {
+          startDate: '2/1/2015',
+          endDate: '2/26/2015',
+          additionalData: {label: 'Label 3'}
+        },
+        {
+          startDate: '2/15/2015',
+          endDate: '3/26/2015',
+          additionalData: {label: 'Label 4'}
+        }
+      ];
+
+      var hot = new Handsontable(gantt, {
+        data: [],
+        hiddenColumns: true,
+        colHeaders: true,
+        rowHeaders: true,
+        ganttChart: {
+          dataSource: dataObj,
+          firstWeekDay: 'monday',
+          startYear: 2015
+        },
+        width: '100%',
+        height: 165,
+        licenseKey: `non-commercial-and-evaluation`
+      });
+
+    </script>
+
+  </body>
+</html>

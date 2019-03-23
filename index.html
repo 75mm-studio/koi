@@ -1,327 +1,122 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- Excel Table Filter CSS -->
-    <link rel="stylesheet" href="css/excel-bootstrap-table-filter-style.css">
-
-    <link rel="stylesheet" href="css/fullcalendar.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/pikaday.css" rel="stylesheet">
+    <link href="css/handsontable.full.min.css" rel="stylesheet" media="screen">
 
     <style>
-      #calendar {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 0;
-        font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-        font-size: 14px;
+      .currentRow {
+        background-color: #E7E8EF !important;
       }
+
+      .currentCol {
+        background-color: #E7E8EF !important;
+      }
+
     </style>
 
-    <title>KOI</title>
+    <title>KOI2</title>
   </head>
   <body>
-
-    <!-- Image and text -->
-    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
-      <span class="navbar-brand m-1 h1">
-        KOI
-      </span>
-      <ul class="navbar-nav m-1">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="camdb.html">Camera Database</a>
-        </li>
-      </ul>
-      <!-- Project dropdown
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle m-1" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Projects
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Circle</a>
-              <a class="dropdown-item" href="#">Triangle</a>
-              <a class="dropdown-item" href="#">Square</a>
-            </div>
-          </li>
-        </ul>
-         -->
+    <nav class="navbar navbar-light bg-light">
+      <span class="navbar-brand mb-0 h1">KOI</span>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-primary mr-sm-2" type="button" onclick="location.href='index.html' ">Shot DB</button>
+        <button class="btn btn-outline-success mr-sm-2" type="button" onclick="location.href='gantt.html'">Gantt Chart</button>
+        <button class="btn btn-outline-danger my-2 my-sm-0" type="button" onclick="location.href='camdb.html'">Camera DB</button>
+      </form>
     </nav>
 
-    <ul class="nav nav-pills m-2" id="pills-tab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Shots</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Schedule</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="pills-assets-tab" data-toggle="pill" href="#pills-assets" role="tab" aria-controls="pills-assets" aria-selected="false">Assets</a>
-      </li>
-    </ul>
+    <div id="shotdb"></div>
 
-    <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-        <div class="card" style="width: 150rem;">
-          <div class="progress" style="height: 25px;">
-            <div class="progress-bar bg-success" style="width:40%">
-              Done
-            </div>
-            <div class="progress-bar bg-warning" style="width:40%">
-              Wip
-            </div>
-            <div class="progress-bar bg-danger" style="width:20%">
-              Ready
-            </div>
-            <div class="progress-bar bg-secondary" style="width:10%">
-              Omit
-            </div>
-          </div>
-          <table style="font-size: 1.0em" class="table table-dark table-striped table-bordered table-hover text-center mb-0">
-            <thead>
-              <tr>
-                <th style="width: 150px">Show</th>
-                <th style="width: 150px">Shot Code</th>
-                <th style="width: 300px">Thumbnail</th>
-                <th style="width: 100px">In</th>
-                <th style="width: 100px">Out</th>
-                <th style="width: 120px">Start</th>
-                <th style="width: 120px">Due</th>
-                <th style="width: 120px">Assign</th>
-                <th style="width: 120px">Status</th>
-                <th style="width: 220px">Preview</th>
-                <th>Camera</th>
-                <th>Lens</th>
-                <th>Task</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="align-middle">TOS</td>
-                <td class="align-middle"><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">FOO_0010</button></td>
-                <td class="align-middle"><img src="img/FOO_0010.jpg" style="width: 250px" class="img-fluid" alt="FOO_0010"></td>
-                <td class="align-middle">1001</td>
-                <td class="align-middle">1200</td>
-                <td class="align-middle">2019-03-01</td>
-                <td class="align-middle">2019-04-01</td>
-                <td class="align-middle">hko</td>
-                <td class="align-middle bg-danger">Ready</td>
-                <td class="align-middle"></td>
-                <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
-                <td class="align-middle">Master Prime 50mm</td>
-                <td class="align-middle">Camera Tracking</td>
-              </tr>
-              <tr>
-                <td class="align-middle">TOS</td>
-                <td class="align-middle"><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">FOO_0020</button></td>
-                <td class="align-middle"><img src="img/FOO_0020.jpg" style="width: 250px" class="img-fluid" alt="FOO_0020"></td>
-                <td class="align-middle">1001</td>
-                <td class="align-middle">1300</td>
-                <td class="align-middle">2019-03-03</td>
-                <td class="align-middle">2019-04-01</td>
-                <td class="align-middle">shjo</td>
-                <td class="align-middle bg-warning">Wip</td>
-                <td class="align-middle"><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">FOO_0020_v02.mov</button></td>
-                <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
-                <td class="align-middle">Master Prime 50mm</td>
-                <td class="align-middle">Camera Tracking</td>
-              </tr>
-              <tr>
-                <td class="align-middle">TOS</td>
-                <td class="align-middle"><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">FOO_0030</button></td>
-                <td class="align-middle"><img src="img/FOO_0030.jpg" style="width: 250px" class="img-fluid" alt="FOO_0030"></td>
-                <td class="align-middle">1001</td>
-                <td class="align-middle">1400</td>
-                <td class="align-middle">2019-03-03</td>
-                <td class="align-middle">2019-04-01</td>
-                <td class="align-middle">shjo</td>
-                <td class="align-middle bg-success">Done</td>
-                <td class="align-middle"><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">FOO_0030_v01.mov</button></td>
-                <td class="align-middle"><p>Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</p></td>
-                <td class="align-middle">Master Prime 50mm</td>
-                <td class="align-middle">Camera Tracking<br>Rotoanimation</td>
-              </tr>
-              <tr>
-                <td class="align-middle">TOS</td>
-                <td class="align-middle"><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">FOO_0040</button></td>
-                <td class="align-middle"><img src="img/FOO_0040.jpg" style="width: 250px" class="img-fluid" alt="FOO_0040"></td>
-                <td class="align-middle">1001</td>
-                <td class="align-middle">1250</td>
-                <td class="align-middle">2019-03-02</td>
-                <td class="align-middle">2019-04-01</td>
-                <td class="align-middle">shjo</td>
-                <td class="align-middle bg-success">Done</td>
-                <td class="align-middle"><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">FOO_0040_v03.mov</button></td>
-                <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
-                <td class="align-middle">Master Prime 50mm</td>
-                <td class="align-middle">Camera Tracking<br>Rotoanimation</td>
-              </tr>
-              <tr>
-                <td class="align-middle">TOS</td>
-                <td class="align-middle"><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">FOO_0050</button></td>
-                <td class="align-middle"><img src="img/FOO_0050.jpg" style="width: 250px" class="img-fluid" alt="FOO_0050"></td>
-                <td class="align-middle">1001</td>
-                <td class="align-middle">1400</td>
-                <td class="align-middle">2019-03-02</td>
-                <td class="align-middle">2019-04-01</td>
-                <td class="align-middle">shjo</td>
-                <td class="align-middle bg-warning">Wip</td>
-                <td class="align-middle"><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">FOO_0050_v01.mov</button></td>
-                <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
-                <td class="align-middle">Master Prime 50mm</td>
-                <td class="align-middle">Camera Tracking<br>Rotoanimation</td>
-              </tr>
-              <tr class="bg-secondary">
-                <td class="align-middle">TOS</td>
-                <td class="align-middle"><button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">FOO_0060</button></td>
-                <td class="align-middle"><img src="img/FOO_0060.jpg" style="width: 250px" class="img-fluid" alt="FOO_0060"></td>
-                <td class="align-middle">1001</td>
-                <td class="align-middle">1300</td>
-                <td class="align-middle">2019-02-28</td>
-                <td class="align-middle">2019-04-01</td>
-                <td class="align-middle">shjo</td>
-                <td class="align-middle bg-secondary">Omit</td>
-                <td class="align-middle"></td>
-                <td class="align-middle">Alexa Mini Open Gate 3.4K<br>28.25 x 18.17 mm</td>
-                <td class="align-middle">Master Prime 50mm</td>
-                <td class="align-middle">Camera Tracking<br>Rotoanimation</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="tab-pane" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-        <div id="calendar"></div>
-      </div>
-      <div class="tab-pane" id="pills-assets" role="tabpanel" aria-labelledby="pills-assets-tab">
-        <h1>ASSETS</h1>
-      </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            Shot Folder Opened
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-
+    <script src="js/handsontable.full.min.js"></script>
     <script src="js/moment.js"></script>
-    <script src="js/fullcalendar.js"></script>
+    <script src="js/pikaday.js"></script>
 
-    <script src="js/excel-bootstrap-table-filter-bundle.min.js"></script>
-    <script src="js/jQuery-Tabledit/jquery.tabledit.min.js"></script>
+    <script type="text/javascript" src="data/test.js"></script>
 
     <script>
+      var container;
+      var hot;
 
-      $(document).ready(function() {
+      function statusRenderer(instance, td, row, col, prop, value, cellProperties) {
+        Handsontable.renderers.TextRenderer.apply(this, arguments);
 
-        $('#calendar').fullCalendar({
-          header: {
-            left: 'prev,next today',
-            center: 'title',
-            right: 'month,agendaWeek,agendaDay,listWeek'
-          },
-          defaultDate: '2019-01-12',
-          navLinks: true, // can click day/week names to navigate views
-          editable: true,
-          eventLimit: true, // allow "more" link when too many events
-          events: [
-            {
-              title: 'All Day Event',
-              start: '2019-01-01',
-            },
-            {
-              title: 'Long Event',
-              start: '2019-01-07',
-              end: '2019-01-10'
-            },
-            {
-              id: 999,
-              title: 'Repeating Event',
-              start: '2019-01-09T16:00:00'
-            },
-            {
-              id: 999,
-              title: 'Repeating Event',
-              start: '2019-01-16T16:00:00'
-            },
-            {
-              title: 'Conference',
-              start: '2019-01-11',
-              end: '2019-01-13'
-            },
-            {
-              title: 'Meeting',
-              start: '2019-01-12T10:30:00',
-              end: '2019-01-12T12:30:00'
-            },
-            {
-              title: 'Lunch',
-              start: '2019-01-12T12:00:00'
-            },
-            {
-              title: 'Meeting',
-              start: '2019-01-12T14:30:00'
-            },
-            {
-              title: 'Happy Hour',
-              start: '2019-01-12T17:30:00'
-            },
-            {
-              title: 'Dinner',
-              start: '2019-01-12T20:00:00'
-            },
-            {
-              title: 'Birthday Party',
-              start: '2019-01-13T07:00:00'
-            },
-            {
-              title: 'Click for Google',
-              url: 'http://google.com/',
-              start: '2019-01-28'
-            }
-          ],
+        if (value === 'Ready') {
+          td.style.background = '#d93749';
+        }
 
+        if (value === 'Wip') {
+          td.style.background = '#fdc02f';
+        }
 
+        if (value === 'Done') {
+          td.style.background = '#30a54a';
+        }
 
-        });
+        if (value === 'Omit') {
+          td.style.background = '#6b747c';
+        }
+      }
 
-      });
-    </script>
-    <script>
-      $('table').Tabledit({
-          url: window.location.href,
-          eventType: 'dblclick',
-          editButton: false,
-          deleteButton: false,
+      function imageRenderer(instance, td, row, col, prop, value, cellProperties) {
+        Handsontable.renderers.cellDecorator.apply(this, arguments);
+        Handsontable.dom.fastInnerHTML(td, '<img class="img" style="max-width: 100%; height: auto; display: block;" src=' + value + '>');
+      }
 
-          columns: {
-              identifier: [0, 'id'],
-              editable: [[7, 'assign'], [8, 'status', '{"1": "Ready", "2": "Wip", "3": "Done", "4": "Omit"}']]
+      Handsontable.renderers.registerRenderer('statusRenderer', statusRenderer);
+
+      container = document.getElementById('shotdb');
+      hot = new Handsontable(container, {
+        //readOnly: false,
+        //editor: false,
+        //data: Handsontable.helper.createSpreadsheetData(60, 13),
+        data: JSON.parse(JSON.stringify(db)),
+        rowHeaders: false,
+        colHeaders: ['Show', 'Shot', 'Thumbnail', 'In', 'Out', 'Start', 'Due', 'Assign', 'Status', 'Preview', 'Camera', 'Lens', 'Task'],
+        columns: [
+          {data: "Show", readOnly: true},
+          {data: "Shot", readOnly: true},
+          {data: "Thumbnail", width: "200px", renderer: imageRenderer},
+          {data: "In", readOnly: true},
+          {data: "Out", readOnly: true},
+          {data: "Start", type: 'date', dateFormat: 'YYYY/MM/DD'},
+          {data: "Due", type: 'date', dateFormat: 'YYYY/MM/DD'},
+          {data: "Assign"},
+          {data: "Status", editor: 'select', selectOptions: ['Ready', 'Wip', 'Done', 'Omit']},
+          {data: "Preview"},
+          {data: "Camera"},
+          {data: "Lens"},
+          {data: "Task"}
+        ],
+        filters: true,
+        dropdownMenu: ['filter_by_condition', 'filter_action_bar', 'filter_by_value'],
+        stretchH: 'all',
+        fixedRowsTop: 0,
+        fillHandle: false,
+        rowHeights: "100%",
+        className: "htCenter htMiddle",
+        //currentRowClassName: 'currentRow',
+        //currentColClassName: 'currentCol',
+        multiColumnSorting: true,
+        enterBeginsEditing: false,
+        cells: function (row, col) {
+          var cellProperties = {};
+          var data = this.instance.getData();
+
+          if (col === 8) {
+            cellProperties.renderer = "statusRenderer"; // uses lookup map
           }
-        });
-    </script>
-    <script>
-      $('table').excelTableFilter();
-    </script>
-    <script>
-      $('.alert').alert();
+
+          return cellProperties;
+        },
+        licenseKey: `non-commercial-and-evaluation`
+      });
+
+
     </script>
 
   </body>

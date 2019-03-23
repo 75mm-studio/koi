@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/handsontable.full.min.css" rel="stylesheet" media="screen">
+
+  <style>
+    .currentRow {
+      background-color: #E7E8EF !important;
+    }
+
+    .currentCol {
+      background-color: #E7E8EF !important;
+    }
+  </style>
+
+  <title>KOI</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">KOI</span>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-outline-primary mr-sm-2" type="button" onclick="location.href='index.html' ">Shot DB</button>
+      <button class="btn btn-outline-success mr-sm-2" type="button" onclick="location.href='gantt.html'">Gantt Chart</button>
+      <button class="btn btn-outline-danger my-2 my-sm-0" type="button" onclick="location.href='camdb.html'">Camera DB</button>
+    </form>
+  </nav>
+
+  <div id="camdb"></div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/handsontable.full.min.js"></script>
+  <script type="text/javascript" src="data/camdb.js"></script>
+
+  <script>
+    var container = document.getElementById('camdb');
+    var hot = new Handsontable(container, {
+      readOnly: true,
+      editor: false,
+      //data: Handsontable.helper.createSpreadsheetData(60, 11),
+      data: JSON.parse(JSON.stringify(db)),
+      rowHeaders: true,
+      colHeaders: ['Maker', 'Model / Brain', 'Sensor', 'Former', 'Format', 'Res', 'Mode', 'IR.W(px)', 'IR.H(px)', 'SIA.W(mm)', 'SIA.H(mm)'],
+      filters: true,
+      dropdownMenu: ['filter_by_condition', 'filter_action_bar', 'filter_by_value'],
+      stretchH: 'all',
+      fixedRowsTop: 0,
+      fillHandle: false,
+      //rowHeights: 30,
+      className: "htCenter htMiddle",
+      currentRowClassName: 'currentRow',
+      currentColClassName: 'currentCol',
+      multiColumnSorting: true,
+      enterBeginsEditing: false,
+      licenseKey: `non-commercial-and-evaluation`
+    });
+  </script>
+</body>
+
+</html>

@@ -24,7 +24,7 @@
     <nav class="navbar navbar-light bg-light">
       <span class="navbar-brand mb-0 h1">KOI</span>
       <form class="form-inline my-2 my-lg-0">
-        <button class="btn btn-outline-primary mr-sm-2" type="button" onclick="location.href='index.html' ">Shot DB</button>
+        <input class="btn btn-outline-primary mr-sm-2" type="button" value="Shot DB" onclick="location.href='index.html'">
         <button class="btn btn-outline-success mr-sm-2" type="button" onclick="location.href='gantt.html'">Gantt Chart</button>
         <button class="btn btn-outline-danger my-2 my-sm-0" type="button" onclick="location.href='camdb.html'">Camera DB</button>
       </form>
@@ -37,6 +37,7 @@
     <script src="js/pikaday.js"></script>
 
     <script type="text/javascript" src="data/test.js"></script>
+    <script id="jan" type="application/json" src="data/show/jan.json"></script>
 
     <script>
       var container;
@@ -60,12 +61,13 @@
         if (value === 'Omit') {
           td.style.background = '#6b747c';
         }
-      }
+      };
 
       function imageRenderer(instance, td, row, col, prop, value, cellProperties) {
         Handsontable.renderers.cellDecorator.apply(this, arguments);
         Handsontable.dom.fastInnerHTML(td, '<img class="img" style="max-width: 100%; height: auto; display: block;" src=' + value + '>');
-      }
+      };
+
 
       Handsontable.renderers.registerRenderer('statusRenderer', statusRenderer);
 
@@ -75,22 +77,23 @@
         //editor: false,
         //data: Handsontable.helper.createSpreadsheetData(60, 13),
         data: JSON.parse(JSON.stringify(db)),
+        //data: JSON.parse(JSON.stringify()),
         rowHeaders: false,
-        colHeaders: ['Show', 'Shot', 'Thumbnail', 'In', 'Out', 'Start', 'Due', 'Assign', 'Status', 'Preview', 'Camera', 'Lens', 'Task'],
+        //colHeaders: ['Show', 'Shot', 'Thumbnail', 'In', 'Out', 'Start', 'Due', 'Assign', 'Status', 'Preview', 'Camera', 'Lens', 'Task'],
         columns: [
-          {data: "Show", readOnly: true},
-          {data: "Shot", readOnly: true},
-          {data: "Thumbnail", width: "200px", renderer: imageRenderer},
-          {data: "In", readOnly: true},
-          {data: "Out", readOnly: true},
-          {data: "Start", type: 'date', dateFormat: 'YYYY/MM/DD'},
-          {data: "Due", type: 'date', dateFormat: 'YYYY/MM/DD'},
-          {data: "Assign"},
-          {data: "Status", editor: 'select', selectOptions: ['Ready', 'Wip', 'Done', 'Omit']},
-          {data: "Preview"},
-          {data: "Camera"},
-          {data: "Lens"},
-          {data: "Task"}
+          {data: "Show", title: "Show", readOnly: true},
+          {data: "Shot", title: "Shot", readOnly: true},
+          {data: "Thumbnail", title: "Thumbnail", width: "200px", renderer: imageRenderer},
+          {data: "In", title: "In", readOnly: true},
+          {data: "Out", title: "Out", readOnly: true},
+          {data: "Start", title: "Start", type: 'date', dateFormat: 'YYYY/MM/DD'},
+          {data: "Due", title: "Due", type: 'date', dateFormat: 'YYYY/MM/DD'},
+          {data: "Assign", title: "Assign"},
+          {data: "Status", title: "Status", editor: 'select', selectOptions: ['Ready', 'Wip', 'Done', 'Omit']},
+          {data: "Preveiw", title: "Preview"},
+          {data: "Camera", title: "Camera"},
+          {data: "Lens", title: "Lens"},
+          {data: "Task", title: "Task"}
         ],
         filters: true,
         dropdownMenu: ['filter_by_condition', 'filter_action_bar', 'filter_by_value'],
@@ -99,6 +102,7 @@
         fillHandle: false,
         rowHeights: "100%",
         className: "htCenter htMiddle",
+        readOnlyCellClassName: 'is-readOnly',
         //currentRowClassName: 'currentRow',
         //currentColClassName: 'currentCol',
         multiColumnSorting: true,

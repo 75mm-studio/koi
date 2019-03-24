@@ -10,7 +10,7 @@ var db = [
     "Due": "2019/02/01",
     "Assign": "hko",
     "Status": "Done",
-    "Preview": "",
+    "Preview": "mov/preview.mov",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
     "Lens": "",
     "Task": "Camera Tracking"

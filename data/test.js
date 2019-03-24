@@ -38,7 +38,7 @@ var db = [
     "Due": "2019/02/01",
     "Assign": "hko",
     "Status": "Done",
-    "Preview": "",
+    "Preview": "/storage/show/jan/scenes/FOO/0030/preview/FOO_0030_v02_r01.mov",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
     "Lens": "50mm",
     "Task": "Camera Tracking"
@@ -52,7 +52,7 @@ var db = [
     "Due": "2019/02/01",
     "Assign": "hko",
     "Status": "Done",
-    "Preview": "",
+    "Preview": "/storage/show/jan/scenes/FOO/0040/preview/FOO_0040_v01_r05.mov",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
     "Lens": "50mm",
     "Task": "Camera Tracking"
@@ -94,7 +94,7 @@ var db = [
     "Due": "2019/02/01",
     "Assign": "hko",
     "Status": "Wip",
-    "Preview": "",
+    "Preview": "/storage/show/jan/scenes/FOO/0070/preview/FOO_0070_v01_r01.mov",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
     "Lens": "32mm",
     "Task": "Camera Tracking\nObject Tracking"

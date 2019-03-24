@@ -10,9 +10,9 @@ var db = [
     "Due": "2019/02/01",
     "Assign": "hko",
     "Status": "Done",
-    "Preview": "mov/preview.mov",
+    "Preview": "/storage/show/jan/scenes/FOO/0010/preview/FOO_0010_v01_r01.mov",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
+    "Lens": "50mm",
     "Task": "Camera Tracking"
   }, {
     "Show": "JAN",
@@ -24,9 +24,9 @@ var db = [
     "Due": "2019/02/01",
     "Assign": "hko",
     "Status": "Done",
-    "Preview": "",
+    "Preview": "/storage/show/jan/scenes/FOO/0020/preview/FOO_0020_v01_r01.mov",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
+    "Lens": "50mm",
     "Task": "Camera Tracking"
   }, {
     "Show": "JAN",
@@ -40,7 +40,7 @@ var db = [
     "Status": "Done",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
+    "Lens": "50mm",
     "Task": "Camera Tracking"
   }, {
     "Show": "JAN",
@@ -54,7 +54,7 @@ var db = [
     "Status": "Done",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
+    "Lens": "50mm",
     "Task": "Camera Tracking"
   }, {
     "Show": "JAN",
@@ -68,8 +68,8 @@ var db = [
     "Status": "Ready",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": "Camera Tracking"
+    "Lens": "32mm",
+    "Task": "Camera Tracking\nObject Tracking"
   }, {
     "Show": "JAN",
     "Shot": "FOO_0060",
@@ -82,8 +82,8 @@ var db = [
     "Status": "Ready",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "32mm",
+    "Task": "Camera Tracking\nObject Tracking"
   }, {
     "Show": "JAN",
     "Shot": "FOO_0070",
@@ -96,8 +96,8 @@ var db = [
     "Status": "Wip",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "32mm",
+    "Task": "Camera Tracking\nObject Tracking"
   }, {
     "Show": "JAN",
     "Shot": "FOO_0080",
@@ -110,8 +110,8 @@ var db = [
     "Status": "Wip",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "75mm",
+    "Task": "Camera Tracking\nObject Tracking"
   }, {
     "Show": "JAN",
     "Shot": "FOO_0090",
@@ -124,8 +124,8 @@ var db = [
     "Status": "Wip",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "75mm",
+    "Task": "Camera Tracking\nObject Tracking"
   }, {
     "Show": "JAN",
     "Shot": "FOO_0100",
@@ -138,8 +138,8 @@ var db = [
     "Status": "Wip",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "75mm",
+    "Task": "Camera Tracking\nObject Tracking"
   }, {
     "Show": "JAN",
     "Shot": "BAR_0010",
@@ -152,8 +152,8 @@ var db = [
     "Status": "Omit",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "18mm",
+    "Task": "Camera Tracking\nObject Tracking"
   }, {
     "Show": "JAN",
     "Shot": "BAR_0020",
@@ -166,8 +166,8 @@ var db = [
     "Status": "Omit",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "18mm",
+    "Task": "Camera Tracking\nObject Tracking\nRotomation"
   }, {
     "Show": "JAN",
     "Shot": "BAR_0030",
@@ -180,8 +180,8 @@ var db = [
     "Status": "Done",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "18mm",
+    "Task": "Camera Tracking\nObject Tracking\nRotomation"
   }, {
     "Show": "JAN",
     "Shot": "BAR_0040",
@@ -194,8 +194,8 @@ var db = [
     "Status": "Done",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "50mm",
+    "Task": "Camera Tracking"
   }, {
     "Show": "JAN",
     "Shot": "BAR_0050",
@@ -208,8 +208,8 @@ var db = [
     "Status": "Done",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "50mm",
+    "Task": "Camera Tracking"
   }, {
     "Show": "JAN",
     "Shot": "BAR_0060",
@@ -222,8 +222,8 @@ var db = [
     "Status": "Ready",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "32mm",
+    "Task": "Camera Tracking"
   }, {
     "Show": "JAN",
     "Shot": "BAR_0070",
@@ -236,8 +236,8 @@ var db = [
     "Status": "Ready",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "32mm",
+    "Task": "Camera Tracking"
   }, {
     "Show": "JAN",
     "Shot": "BAR_0080",
@@ -250,8 +250,8 @@ var db = [
     "Status": "Ready",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "32mm",
+    "Task": "Camera Tracking\nObject Tracking"
   }, {
     "Show": "JAN",
     "Shot": "BAR_0090",
@@ -264,8 +264,8 @@ var db = [
     "Status": "Done",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "75mm",
+    "Task": "Camera Tracking\nObject Tracking"
   }, {
     "Show": "JAN",
     "Shot": "BAR_0100",
@@ -278,8 +278,8 @@ var db = [
     "Status": "Done",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "75mm",
+    "Task": "Camera Tracking\nObject Tracking"
   }, {
     "Show": "JAN",
     "Shot": "BAR_0110",
@@ -292,8 +292,8 @@ var db = [
     "Status": "Wip",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "75mm",
+    "Task": "Camera Tracking\nObject Tracking"
   }, {
     "Show": "JAN",
     "Shot": "BAR_0120",
@@ -306,8 +306,8 @@ var db = [
     "Status": "Done",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "18mm",
+    "Task": "Camera Tracking"
   }, {
     "Show": "JAN",
     "Shot": "BAR_0130",
@@ -320,8 +320,8 @@ var db = [
     "Status": "Done",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "18mm",
+    "Task": "Camera Tracking"
   }, {
     "Show": "JAN",
     "Shot": "BAR_0140",
@@ -334,8 +334,8 @@ var db = [
     "Status": "Done",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "50mm",
+    "Task": "Camera Tracking"
   }, {
     "Show": "JAN",
     "Shot": "BAR_0150",
@@ -348,8 +348,8 @@ var db = [
     "Status": "Done",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "50mm",
+    "Task": "Camera Tracking"
   }, {
     "Show": "JAN",
     "Shot": "BAR_0160",
@@ -362,8 +362,8 @@ var db = [
     "Status": "Omit",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "32mm",
+    "Task": "Camera Tracking"
   }, {
     "Show": "JAN",
     "Shot": "BAR_0170",
@@ -376,8 +376,8 @@ var db = [
     "Status": "Ready",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "32mm",
+    "Task": "Camera Tracking"
   }, {
     "Show": "JAN",
     "Shot": "BAR_0180",
@@ -390,11 +390,7 @@ var db = [
     "Status": "Ready",
     "Preview": "",
     "Camera": "ALEXA MINI\n23.76 x 17.82",
-    "Lens": "",
-    "Task": ""
+    "Lens": "32mm",
+    "Task": "Camera Tracking"
   }
-
-
-
-
 ]

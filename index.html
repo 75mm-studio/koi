@@ -39,15 +39,14 @@
     <script type="text/javascript" src="data/test.js"></script>
 
     <script>
-      Papa.parse("data/show/test_project.csv", {
+      var prj01 = Papa.parse("data/show/test_project.csv", {
         download: true,
+        header: true,
         complete: function(results){
           console.log(results.data);
         }
       });
 
-    </script>
-    <script>
       var container;
       var hot;
 
@@ -95,6 +94,8 @@
         //editor: false,
         //data: Handsontable.helper.createSpreadsheetData(60, 13),
         data: JSON.parse(JSON.stringify(db)),
+        //data: JSON.parse(JSON.stringify(prj01)),
+        //data: prj01,
         /*
         data: [
 

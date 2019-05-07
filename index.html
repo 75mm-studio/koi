@@ -39,13 +39,58 @@
     <script type="text/javascript" src="data/test.js"></script>
 
     <script>
-      var prj01 = Papa.parse("data/show/test_project.csv", {
+
+
+      /*
+      Papa.parse("data/show/test_project.csv", {
         download: true,
         header: true,
         complete: function(results){
           console.log(results.data);
+          var db2 = results.data;
+
         }
       });
+      */
+      var data;
+
+      Papa.parse("data/show/test_project.csv", {
+          download: true,
+          header: true,
+          complete: function (results) {
+              var headers = (Object.keys(results.data[0]));
+              console.log(headers);
+              var rows = results.data.length;
+              var columns = Object.keys(results.data[0]).length;
+              console.log(rows + 1);
+              console.log(columns);
+              var content;
+
+                  for (i = 0; i < rows; i++) {
+                      var j = 0;
+                          for (var key in results.data[i]) {
+                              if (results.data[i].hasOwnProperty(key)) {
+                                  var element = results.data[i][key];
+                                  hot.setDataAtCell(i+1, j, element);
+                                  hot.setDataAtCell(0, j, headers[j]);
+                              }
+                              j++;
+                          }
+                  }
+          }
+      });
+      /*
+      function populate(data) {
+        var rows = [];
+
+        for (var i = 0; i < data.length; i++) {
+          rows.push(data[i]);
+        }
+        console.log(JSON.stringify(rows));
+        //return JSON.parse(rows);
+      }
+      */
+
 
       var container;
       var hot;
@@ -88,19 +133,18 @@
 
       Handsontable.renderers.registerRenderer('statusRenderer', statusRenderer);
 
+
       container = document.getElementById('shotdb');
       hot = new Handsontable(container, {
         //readOnly: false,
         //editor: false,
         //data: Handsontable.helper.createSpreadsheetData(60, 13),
-        data: JSON.parse(JSON.stringify(db)),
-        //data: JSON.parse(JSON.stringify(prj01)),
-        //data: prj01,
-        /*
-        data: [
+        //data: JSON.parse(JSON.stringify(db)),
+        //data: data,
+        data: function(){
 
-        ]
-        */
+        }
+        //data: JSON.parse(JSON.stringify(parseData(populate))),
 
         rowHeaders: false,
         //colHeaders: ['Show', 'Shot', 'Thumbnail', 'In', 'Out', 'Start', 'Due', 'Assign', 'Status', 'Preview', 'Camera', 'Lens', 'Task'],

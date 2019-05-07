@@ -34,10 +34,18 @@
     <script src="js/handsontable.full.min.js"></script>
     <script src="js/moment.js"></script>
     <script src="js/pikaday.js"></script>
+    <script src="js/papaparse.min.js"></script>
 
     <script type="text/javascript" src="data/test.js"></script>
-    <script id="jan" type="application/json" src="data/show/jan.json"></script>
 
+    <script>
+      Papa.parse("/storage/show/locus_190424_sinsaege/scenes/locus_190424_sinsaege.csv", {
+        complete: function(results){
+          console.log(results.data);
+        }
+      });
+
+    </script>
     <script>
       var container;
       var hot;
@@ -86,21 +94,28 @@
         //editor: false,
         //data: Handsontable.helper.createSpreadsheetData(60, 13),
         data: JSON.parse(JSON.stringify(db)),
-        //data: JSON.parse(JSON.stringify()),
+        /*
+        data: [
+
+        ]
+        */
+
         rowHeaders: false,
         //colHeaders: ['Show', 'Shot', 'Thumbnail', 'In', 'Out', 'Start', 'Due', 'Assign', 'Status', 'Preview', 'Camera', 'Lens', 'Task'],
         columns: [
           {data: "Show", title: "Show", readOnly: true},
           {data: "Shot", title: "Shot", readOnly: true},
           {data: "Thumbnail", title: "Thumbnail", width: "250px", renderer: imageRenderer},
-          {data: "In", title: "In", readOnly: true},
-          {data: "Out", title: "Out", readOnly: true},
+          {data: "ORG_In", title: "ORG In", readOnly: true},
+          {data: "ORG_Out", title: "ORG Out", readOnly: true},
+          {data: "TW_In", title: "TW In", readOnly: true},
+          {data: "TW_Out", title: "TW Out", readOnly: true},
           {data: "Start", title: "Start", type: 'date', dateFormat: 'YYYY/MM/DD'},
           {data: "Due", title: "Due", type: 'date', dateFormat: 'YYYY/MM/DD'},
           {data: "Assign", title: "Assign"},
           {data: "Status", title: "Status", editor: 'select', selectOptions: ['Ready', 'Wip', 'Done', 'Omit']},
           {data: "Preview", title: "Preview", renderer: previewRenderer, readOnly: true},
-          {data: "Camera", title: "Camera"},
+          {data: "Filmback", title: "Filmback"},
           {data: "Lens", title: "Lens"},
           {data: "Task", title: "Task"}
         ],
@@ -119,7 +134,7 @@
         cells: function (row, col) {
           var cellProperties = {};
 
-          if (col === 8) {
+          if (col === 10) {
             cellProperties.renderer = "statusRenderer"; // uses lookup map
           }
 

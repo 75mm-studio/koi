@@ -52,49 +52,6 @@
       });
       */
       //
-      var files = ["data/show/test_project.csv", "data/show/test_project2.csv", "data/show/test_project3.csv"];
-      var allResults = [];
-      var rows;
-
-      for (var f = 0; f < files.length; f++) {
-        var offset = 0;
-        console.log(offset);
-
-        Papa.parse(files[f], {
-            download: true,
-            header: false,
-            skipEmptyLines: true,
-            complete: function (results) {
-              //var headers = (Object.keys(results.data[0]));
-              //console.log(headers);
-              //console.log(results.data);
-
-              var rows = results.data.length;
-              var columns = Object.keys(results.data[0]).length;
-              //console.log(rows + 1);
-              //console.log(columns);
-              //var content;
-
-                  for (i = 1; i < rows; i++) {
-                      var j = 0;
-                          for (var key in results.data[i]) {
-                              if (results.data[i].hasOwnProperty(key)) {
-                                  var element = results.data[i][key];
-                                  //hot.setDataAtCell(i+1, j, element);
-                                  hot.setDataAtCell(i-1+offset, j, element);
-                                  //hot.setDataAtCell(0, j, headers[j]);
-                              }
-                              j++;
-                          }
-                  }
-                  offset = offset + rows-1;
-                  console.log(offset);
-            }
-        });
-      }
-
-
-      /*
       Papa.parse("data/show/test_project.csv", {
           download: true,
           header: false,
@@ -122,8 +79,7 @@
                   }
           }
       });
-      */
-
+      //
       /*
       function populate(data) {
         var rows = [];
@@ -162,7 +118,7 @@
 
       function imageRenderer(instance, td, row, col, prop, value, cellProperties) {
         Handsontable.renderers.cellDecorator.apply(this, arguments);
-        Handsontable.dom.fastInnerHTML(td, '<img class="img" style="width: 250px; height: auto; display: block;" src=' + value + '>');
+        Handsontable.dom.fastInnerHTML(td, '<img class="img" style="max-width: 100%; height: auto; display: block;" src=' + value + '>');
       };
 
       function previewRenderer(instance, td, row, col, prop, value, cellProperties) {

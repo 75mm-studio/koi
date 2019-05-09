@@ -39,7 +39,7 @@
     <script type="text/javascript" src="data/test.js"></script>
 
     <script>
-
+      //
       var files = ["data/show/test_project.csv", "data/show/test_project2.csv", "data/show/test_project3.csv"];
 
       for (var f = 0; f < files.length; f++) {
@@ -80,19 +80,19 @@
         Handsontable.renderers.TextRenderer.apply(this, arguments);
         td.style.color = 'white';
 
-        if (value === 'Ready') {
+        if (value === 'Ready' || value === 'ready' || value === 'r') {
           td.style.background = '#d93749';
         }
 
-        if (value === 'Wip') {
+        if (value === 'Wip' || value === 'wip' || value === 'w') {
           td.style.background = '#fdc02f';
         }
 
-        if (value === 'Done') {
+        if (value === 'Done' || value === 'done' || value === 'd') {
           td.style.background = '#30a54a';
         }
 
-        if (value === 'Omit') {
+        if (value === 'Omit' || value === 'omit' || value === 'o') {
           td.style.background = '#6b747c';
         }
       };
@@ -130,7 +130,7 @@
 
         rowHeaders: false,
         colHeaders: true,
-        colHeaders: ['Show', 'Shot', 'Thumbnail', 'ORG In', 'ORG Out', 'TW In', 'TW Out', 'Start', 'Due', 'Assign', 'Status', 'Preview', 'Filmback', 'Lens', 'Task'],
+        colHeaders: ['Show', 'Shot', 'Thumbnail', 'ORG In', 'ORG Out', 'TW In', 'TW Out', 'Start', 'Due', 'Assign', 'Status', 'Preview', 'Camera', 'Filmback', 'Lens', 'Task'],
         /*
         columns: [
           {data: "Show", title: "Show", readOnly: true},

@@ -1,5 +1,5 @@
 Show,Shot,Thumbnail,ORG_In,ORG_Out,TW_In,TW_Out,Start,Due,Assign,Status,Preview,Filmback,Lens,Task
-ARI,C03,/scenes/thumb/c03.0001.jpg,1,75,,,2019/05/01,2019/05/08,hko,Done,,,50mm,Camera
-ARI,C08,/scenes/thumb/c08_org.0001.jpg,1,74,1,37,2019/05/02,2019/05/09,hko,Done,,,75mm,Camera
-ARI,C09,/scenes/thumb/c09.0001.jpg,1,56,,,2019/05/03,2019/05/10,shjo,Wip,,,100mm,Camera
-ARI,C10,/scenes/thumb/c10_org.0001.jpg,1,268,1,33,2019/05/04,2019/05/11,shjo,Wip,,,50mm,Camera
+ARI,C03,img/FOO_0010.jpg,1,75,,,2019/05/01,2019/05/08,hko,Done,,,50mm,Camera
+ARI,C08,img/FOO_0020.jpg,1,74,1,37,2019/05/02,2019/05/09,hko,Done,,,75mm,Camera
+ARI,C09,img/FOO_0030.jpg,1,56,,,2019/05/03,2019/05/10,shjo,Wip,,,100mm,Camera
+ARI,C10,img/FOO_0040.jpg,1,268,1,33,2019/05/04,2019/05/11,shjo,Wip,,,50mm,Camera

@@ -1,0 +1,5 @@
+Show,Shot,Thumbnail,ORG_In,ORG_Out,TW_In,TW_Out,Start,Due,Assign,Status,Preview,Filmback,Lens,Task
+TAU,S03,img/FOO_0050.jpg,1,75,,,2019/05/01,2019/05/08,hko,Ready,,,50mm,Camera
+TAU,S08,img/FOO_0060.jpg,1,74,1,37,2019/05/02,2019/05/09,hko,Done,,,75mm,Camera
+TAU,S09,img/FOO_0070.jpg,1,56,,,2019/05/03,2019/05/10,shjo,Omit,,,100mm,Camera
+TAU,S10,img/FOO_0080.jpg,1,268,1,33,2019/05/04,2019/05/11,shjo,Wip,,,50mm,Camera

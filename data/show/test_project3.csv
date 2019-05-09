@@ -1,0 +1,5 @@
+Show,Shot,Thumbnail,ORG_In,ORG_Out,TW_In,TW_Out,Start,Due,Assign,Status,Preview,Filmback,Lens,Task
+AQU,C03,img/FOO_0030.jpg,1,75,,,2019/05/01,2019/05/08,wjchoi,Ready,,,50mm,Camera
+AQU,C04,img/FOO_0040.jpg,1,74,1,37,2019/05/02,2019/05/09,hko,Done,,,75mm,Camera
+AQU,C05,img/FOO_0050.jpg,1,56,,,2019/05/03,2019/05/10,shjo,Omit,,,100mm,Camera
+AQU,C06,img/FOO_0060.jpg,1,268,1,33,2019/05/04,2019/05/11,hko,Omit,,,50mm,Camera

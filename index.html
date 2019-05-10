@@ -42,7 +42,7 @@
 
       function statusRenderer(instance, td, row, col, prop, value, cellProperties) {
         Handsontable.renderers.TextRenderer.apply(this, arguments);
-        td.style.color = 'white';
+        td.style.color = '#FFFFFF';
 
         if (value === 'Ready' || value === 'ready' || value === 'r') {
           td.style.background = '#d93749';
@@ -67,7 +67,8 @@
 
       function imageRenderer(instance, td, row, col, prop, value, cellProperties) {
         Handsontable.renderers.cellDecorator.apply(this, arguments);
-        Handsontable.dom.fastInnerHTML(td, `<img class="img" style="width: 250px; height: auto; display: block;" src=" `+ value +` " alt="`+ value +`" onclick="window.open('`+ value +`')">`);
+        Handsontable.dom.fastInnerHTML(td, `<img class="img" style="width: 250px; height: auto; display: block;" src=" `+ value +` " alt="`+ value +`">`);
+        //Handsontable.dom.fastInnerHTML(td, `<img class="img" style="width: 250px; height: auto; display: block;" src=" `+ value +` " alt="`+ value +`" onclick="window.open('`+ value +`')">`);
         //Handsontable.dom.fastInnerHTML(td, `<img class="img" style="width: 250px; height: auto; display: block;" src=" `+ value +` " alt="`+ value +`" onclick="alert('`+ value +`')">`);
         //Handsontable.dom.fastInnerHTML(td, '<a href="#" onclick="openFileOption('+value+');return;"><img class="img" style="width: 250px; height: auto; display: block;" src=' + value + ' alt="'+value+'"></a>');
       };
@@ -92,10 +93,6 @@
 
         //data: JSON.parse(JSON.stringify(db)),
         //data: Handsontable.helper.createSpreadsheetData(100, 15),
-        //minSpareRows: 1,
-        //data: JSON.parse(JSON.stringify(parseData(populate))),
-
-        //startCols: 6,
 
         rowHeaders: false,
         colHeaders: true,

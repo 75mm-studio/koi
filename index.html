@@ -67,7 +67,8 @@
 
       function imageRenderer(instance, td, row, col, prop, value, cellProperties) {
         Handsontable.renderers.cellDecorator.apply(this, arguments);
-        Handsontable.dom.fastInnerHTML(td, '<img class="img" style="width: 250px; height: auto; display: block;" src=' + value + ' alt="'+value+'">');
+        Handsontable.dom.fastInnerHTML(td, `<img class="img" style="width: 250px; height: auto; display: block;" src=" `+ value +` " alt="`+ value +`" onclick="window.open('`+ value +`')">`);
+        //Handsontable.dom.fastInnerHTML(td, `<img class="img" style="width: 250px; height: auto; display: block;" src=" `+ value +` " alt="`+ value +`" onclick="alert('`+ value +`')">`);
         //Handsontable.dom.fastInnerHTML(td, '<a href="#" onclick="openFileOption('+value+');return;"><img class="img" style="width: 250px; height: auto; display: block;" src=' + value + ' alt="'+value+'"></a>');
       };
 
@@ -76,13 +77,15 @@
         if (value === "") {
           //pass
         } else {
-          var basename = value.substring(value.lastIndexOf('/')+1);
-          Handsontable.dom.fastInnerHTML(td, `<input class="btn btn-outline-primary" type="button" value="`+ basename +`" onclick="alert('`+ value +`')">`);
+          //var basename = value.substring(value.lastIndexOf('/')+1);
+          Handsontable.dom.fastInnerHTML(td, `<input class="btn btn-outline-primary" type="button" value="A">`);
+          //Handsontable.dom.fastInnerHTML(td, `<input class="btn btn-outline-primary" type="button" value="`+ basename +`" onclick="alert('`+ value +`')">`);
         }
       };
 
       Handsontable.renderers.registerRenderer('imageRenderer', imageRenderer);
       Handsontable.renderers.registerRenderer('statusRenderer', statusRenderer);
+      //Handsontable.renderers.registerRenderer('previewRenderer', previewRenderer);
 
       var container = document.getElementById('shotdb');
       var hot = new Handsontable(container, {
@@ -139,13 +142,16 @@
           if (col === 10) {
             cellProperties.renderer = "statusRenderer"; // uses lookup map
           }
-
+          /*
+          if (col === 11 ) {
+            cellProperties.renderer = previewRenderer; // uses lookup map
+          }
+          */
           return cellProperties;
         },
         licenseKey: `non-commercial-and-evaluation`
       });
 
-      //hot.setDataAtCell(0, 1, 'Ford');
 
       var files = ["data/show/test_project.csv", "data/show/test_project2.csv", "data/show/test_project3.csv"];
 

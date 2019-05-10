@@ -1,5 +1,6 @@
 Show,Shot,Thumbnail,ORG_In,ORG_Out,TW_In,TW_Out,Start,Due,Assign,Status,Preview,Camera,Filmback,Lens,Task
-ARI,C03,img/FOO_0010.jpg,1,75,,,2019/05/01,2019/05/08,hko,r,,ALEXA SXT,23.76 x 17.82,50mm,Camera
+ARI,C03,/storage/show/locus_190424_sinsaege/scenes/thumb/c03.0001.jpg,1,75,,,2019/05/01,2019/05/08,hko,r,,ALEXA SXT,23.76 x 17.82,50mm,"Camera
+Object"
 ARI,C08,img/FOO_0020.jpg,1,74,1,37,2019/05/02,2019/05/09,hko,r,,ALEXA SXT,23.76 x 17.82,75mm,Camera
 ARI,C09,img/FOO_0030.jpg,1,56,,,2019/05/03,2019/05/10,shjo,r,,ALEXA SXT,23.76 x 17.82,100mm,Camera
 ARI,C10,img/FOO_0040.jpg,1,268,1,33,2019/05/04,2019/05/11,shjo,r,,ALEXA SXT,23.76 x 17.82,50mm,Camera

@@ -40,71 +40,35 @@
 
     <script>
 
-      //
-      var files = ["data/show/test_project.csv", "data/show/test_project2.csv", "data/show/test_project3.csv"];
-
-      for (var f = 0; f < files.length; f++) {
-        var offset = 0;
-        Papa.parse(files[f], {
-            download: true,
-            header: false,
-            skipEmptyLines: true,
-            complete: function (results) {
-              //var headers = (Object.keys(results.data[0]));
-              //console.log(headers);
-              //console.log(results.data);
-
-              var rows = results.data.length;
-              var columns = Object.keys(results.data[0]).length;
-              //console.log(rows + 1);
-              //console.log(columns);
-              //var content;
-
-                  for (i = 1; i < rows; i++) {
-                      var j = 0;
-                          for (var key in results.data[i]) {
-                              if (results.data[i].hasOwnProperty(key)) {
-                                  var element = results.data[i][key];
-                                  //hot.setDataAtCell(i+1, j, element);
-                                  hot.setDataAtCell(i-1+offset, j, element);
-                                  //hot.setDataAtCell(0, j, headers[j]);
-                              }
-                              j++;
-                          }
-                  }
-                  offset = offset + rows-1;
-            }
-        });
-      }
-
       function statusRenderer(instance, td, row, col, prop, value, cellProperties) {
         Handsontable.renderers.TextRenderer.apply(this, arguments);
         td.style.color = 'white';
 
         if (value === 'Ready' || value === 'ready' || value === 'r') {
           td.style.background = '#d93749';
-          Handsontable.dom.fastInnerHTML(td, 'Ready');
+          Handsontable.dom.fastInnerHTML(td, '<b>Ready</b>');
         }
 
         if (value === 'Wip' || value === 'wip' || value === 'w') {
           td.style.background = '#fdc02f';
-          Handsontable.dom.fastInnerHTML(td, 'Wip');
+          Handsontable.dom.fastInnerHTML(td, '<b>Wip</b>');
         }
 
         if (value === 'Done' || value === 'done' || value === 'd') {
           td.style.background = '#30a54a';
-          Handsontable.dom.fastInnerHTML(td, 'Done');
+          Handsontable.dom.fastInnerHTML(td, '<b>Done</b>');
         }
 
         if (value === 'Omit' || value === 'omit' || value === 'o') {
           td.style.background = '#6b747c';
-          Handsontable.dom.fastInnerHTML(td, 'Omit');
+          Handsontable.dom.fastInnerHTML(td, '<b>Omit</b>');
         }
       };
 
       function imageRenderer(instance, td, row, col, prop, value, cellProperties) {
         Handsontable.renderers.cellDecorator.apply(this, arguments);
-        Handsontable.dom.fastInnerHTML(td, '<img class="img" style="width: 300px; height: auto; display: block;" src=' + value + ' alt="'+value+'">');
+        Handsontable.dom.fastInnerHTML(td, '<img class="img" style="width: 250px; height: auto; display: block;" src=' + value + ' alt="'+value+'">');
+        //Handsontable.dom.fastInnerHTML(td, '<a href="#" onclick="openFileOption('+value+');return;"><img class="img" style="width: 250px; height: auto; display: block;" src=' + value + ' alt="'+value+'"></a>');
       };
 
       function previewRenderer(instance, td, row, col, prop, value, cellProperties) {
@@ -117,14 +81,12 @@
         }
       };
 
+      Handsontable.renderers.registerRenderer('imageRenderer', imageRenderer);
       Handsontable.renderers.registerRenderer('statusRenderer', statusRenderer);
 
       var container = document.getElementById('shotdb');
       var hot = new Handsontable(container, {
 
-        //readOnly: false,
-        //editor: false,
-        //data: Handsontable.helper.createSpreadsheetData(60, 13),
         //data: JSON.parse(JSON.stringify(db)),
         //data: Handsontable.helper.createSpreadsheetData(100, 15),
         //minSpareRows: 1,
@@ -171,7 +133,7 @@
           var cellProperties = {};
 
           if (col === 2) {
-            cellProperties.renderer = imageRenderer; // uses lookup map
+            cellProperties.renderer = "imageRenderer"; // uses lookup map
           }
 
           if (col === 10) {
@@ -184,6 +146,42 @@
       });
 
       //hot.setDataAtCell(0, 1, 'Ford');
+
+      var files = ["data/show/test_project.csv", "data/show/test_project2.csv", "data/show/test_project3.csv"];
+
+      for (var f = 0; f < files.length; f++) {
+        var offset = 0;
+        Papa.parse(files[f], {
+            download: true,
+            header: false,
+            skipEmptyLines: true,
+            complete: function (results) {
+              //var headers = (Object.keys(results.data[0]));
+              //console.log(headers);
+              //console.log(results.data);
+
+              var rows = results.data.length;
+              var columns = Object.keys(results.data[0]).length;
+              //console.log(rows + 1);
+              //console.log(columns);
+              //var content;
+
+                  for (i = 1; i < rows; i++) {
+                      var j = 0;
+                          for (var key in results.data[i]) {
+                              if (results.data[i].hasOwnProperty(key)) {
+                                  var element = results.data[i][key];
+                                  //hot.setDataAtCell(i+1, j, element);
+                                  hot.setDataAtCell(i-1+offset, j, element);
+                                  //hot.setDataAtCell(0, j, headers[j]);
+                              }
+                              j++;
+                          }
+                  }
+                  offset = offset + rows-1;
+            }
+        });
+      }
     </script>
 
 

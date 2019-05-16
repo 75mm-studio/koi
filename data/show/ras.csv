@@ -1,7 +1,7 @@
 Show,Shot,Thumbnail,ORG_In,ORG_Out,TW_In,TW_Out,Start,Due,Assign,Status,Preview,Camera,Filmback,Lens,Task
-RAS,C03,/storage/show/locus_190224_filgood/scenes/thumb/c13.0001.jpg,1,75,,,2019/05/01,2019/05/08,hko,r,,ALEXA SXT,23.76 x 17.82,50mm,"Camera
+RAS,C03,img/FOO_0030.jpg,1,75,,,2019/05/01,2019/05/08,hko,r,,ALEXA SXT,23.76 x 17.82,50mm,"Camera
 Object"
-RAS,C08,/storage/show/locus_190224_filgood/scenes/thumb/c26.0001.jpg,1,74,1,37,2019/05/02,2019/05/09,hko,r,,ALEXA SXT,23.76 x 17.82,75mm,"Camera
+RAS,C08,img/FOO_0030.jpg,1,74,1,37,2019/05/02,2019/05/09,hko,r,,ALEXA SXT,23.76 x 17.82,75mm,"Camera
 Rotomation"
 RAS,C09,img/FOO_0030.jpg,1,56,,,2019/05/03,2019/05/10,shjo,r,,ALEXA SXT,23.76 x 17.82,100mm,Camera
 RAS,C10,img/FOO_0040.jpg,1,268,1,33,2019/05/04,2019/05/11,shjo,r,,ALEXA SXT,23.76 x 17.82,50mm,Camera

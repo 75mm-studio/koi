@@ -96,7 +96,7 @@
 
         rowHeaders: false,
         colHeaders: true,
-        colHeaders: ['Show', 'Shot', 'Thumbnail', 'ORG In', 'ORG Out', 'TW In', 'TW Out', 'Start', 'Due', 'Assign', 'Status', 'Preview', 'Camera', 'Filmback', 'Lens', 'Task'],
+        colHeaders: ['Show', 'Shot', 'Thumbnail', 'ORG In', 'ORG Out', 'TW In', 'TW Out', 'Camera', 'Film Back', 'Focal Length', 'Assign', 'Status', 'Preview', 'Output', 'Deadline', 'Task'],
         /*
         columns: [
           {data: "Show", title: "Show", readOnly: true},
@@ -136,7 +136,7 @@
             cellProperties.renderer = "imageRenderer"; // uses lookup map
           }
 
-          if (col === 10) {
+          if (col === 11) {
             cellProperties.renderer = "statusRenderer"; // uses lookup map
           }
           /*
@@ -149,7 +149,7 @@
         licenseKey: `non-commercial-and-evaluation`
       });
 
-      var files = ["data/show/test_project2.csv", "data/show/test_project3.csv", "data/show/test_project3.csv", "data/show/ras.csv"];
+      var files = ["data/show/ras.csv"];
 
       for (var f = 0; f < files.length; f++) {
         var offset = 0;

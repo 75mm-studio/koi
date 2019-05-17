@@ -1,0 +1,10 @@
+Show,Shot,Thumbnail,ORG_In,ORG_Out,TW_In,TW_Out,Camera,Film Back,Focal Length,Assign,Status,Output,Deadline,Task
+75MM,C10,img/FOO_0010.jpg,1,75,,,ALEXA SXT,23.76 x 17.82,50mm,hko,w,,190615,"Camera
+Object"
+75MM,C20,img/FOO_0020.jpg,1,74,1,37,ALEXA SXT,23.76 x 17.82,75mm,hko,r,,190616,"Camera
+Rotomation"
+75MM,C30,img/FOO_0030.jpg,1,56,,,ALEXA SXT,23.76 x 17.82,100mm,shjo,d,190617,190618,Camera
+75MM,C40,img/FOO_0040.jpg,1,268,1,33,ALEXA SXT,23.76 x 17.82,50mm,shjo,d,190618,190618,Camera
+75MM,C50,img/FOO_0050.jpg,1,75,,,ALEXA SXT,23.76 x 17.82,100mm,hko,d,,190619,Camera
+75MM,C60,img/FOO_0060.jpg,1,74,1,33,ALEXA SXT,23.76 x 17.82,50mm,shjo,r,,190620,Camera
+75MM,C70,img/FOO_0070.jpg,1,56,,,ALEXA SXT,23.76 x 17.82,100mm,shjo,o,,190621,Camera

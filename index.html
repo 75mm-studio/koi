@@ -67,22 +67,25 @@
 
       function imageRenderer(instance, td, row, col, prop, value, cellProperties) {
         Handsontable.renderers.cellDecorator.apply(this, arguments);
-        Handsontable.dom.fastInnerHTML(td, `<img class="img" style="width: 250px; height: auto; display: block;" src=" `+ value +` " alt="`+ value +`">`);
-        //Handsontable.dom.fastInnerHTML(td, `<img class="img" style="width: 250px; height: auto; display: block;" src=" `+ value +` " alt="`+ value +`" onclick="window.open('`+ value +`')">`);
+        //Handsontable.dom.fastInnerHTML(td, `<img class="img" style="width: 250px; height: auto; display: block;" src=" `+ value +` " alt="`+ value +`">`);
+        Handsontable.dom.fastInnerHTML(td, `<img class="img" style="width: 250px; height: auto; display: block;" src=" `+ value +` " alt="`+ value +`" onclick="window.open('`+ value +`')">`);
         //Handsontable.dom.fastInnerHTML(td, `<img class="img" style="width: 250px; height: auto; display: block;" src=" `+ value +` " alt="`+ value +`" onclick="alert('`+ value +`')">`);
         //Handsontable.dom.fastInnerHTML(td, '<a href="#" onclick="openFileOption('+value+');return;"><img class="img" style="width: 250px; height: auto; display: block;" src=' + value + ' alt="'+value+'"></a>');
       };
 
+      /*
       function previewRenderer(instance, td, row, col, prop, value, cellProperties) {
         Handsontable.renderers.cellDecorator.apply(this, arguments);
         if (value === "") {
           //pass
         } else {
           //var basename = value.substring(value.lastIndexOf('/')+1);
-          Handsontable.dom.fastInnerHTML(td, `<input class="btn btn-outline-primary" type="button" value="A">`);
+          //var basename;
+          Handsontable.dom.fastInnerHTML(td, `<input class="btn btn-outline-primary" type="button" value="Open">`);
           //Handsontable.dom.fastInnerHTML(td, `<input class="btn btn-outline-primary" type="button" value="`+ basename +`" onclick="alert('`+ value +`')">`);
         }
       };
+      */
 
       Handsontable.renderers.registerRenderer('imageRenderer', imageRenderer);
       Handsontable.renderers.registerRenderer('statusRenderer', statusRenderer);
@@ -96,7 +99,7 @@
 
         rowHeaders: false,
         colHeaders: true,
-        colHeaders: ['Show', 'Shot', 'Thumbnail', 'ORG In', 'ORG Out', 'TW In', 'TW Out', 'Camera', 'Film Back', 'Focal Length', 'Assign', 'Status', 'Preview', 'Output', 'Deadline', 'Task'],
+        colHeaders: ['Show', 'Shot', 'Thumbnail', 'ORG In', 'ORG Out', 'TW In', 'TW Out', 'Camera', 'Film Back', 'Focal Length', 'Assign', 'Status', 'Output', 'Deadline', 'Task'],
         /*
         columns: [
           {data: "Show", title: "Show", readOnly: true},
@@ -140,8 +143,8 @@
             cellProperties.renderer = "statusRenderer"; // uses lookup map
           }
           /*
-          if (col === 11 ) {
-            cellProperties.renderer = previewRenderer; // uses lookup map
+          if (col === 12 ) {
+            cellProperties.renderer = "previewRenderer"; // uses lookup map
           }
           */
           return cellProperties;
@@ -149,7 +152,7 @@
         licenseKey: `non-commercial-and-evaluation`
       });
 
-      var files = ["data/show/ras.csv"];
+      var files = ["data/show/75MM.csv"];
 
       for (var f = 0; f < files.length; f++) {
         var offset = 0;

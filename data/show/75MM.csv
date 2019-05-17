@@ -1,10 +1,99 @@
-Show,Shot,Thumbnail,ORG_In,ORG_Out,TW_In,TW_Out,Camera,Film Back,Focal Length,Assign,Status,Output,Deadline,Task
-75MM,C10,img/FOO_0010.jpg,1,75,,,ALEXA SXT,23.76 x 17.82,50mm,hko,w,,190615,"Camera
-Object"
-75MM,C20,img/FOO_0020.jpg,1,74,1,37,ALEXA SXT,23.76 x 17.82,75mm,hko,r,,190616,"Camera
-Rotomation"
-75MM,C30,img/FOO_0030.jpg,1,56,,,ALEXA SXT,23.76 x 17.82,100mm,shjo,d,190617,190618,Camera
-75MM,C40,img/FOO_0040.jpg,1,268,1,33,ALEXA SXT,23.76 x 17.82,50mm,shjo,d,190618,190618,Camera
-75MM,C50,img/FOO_0050.jpg,1,75,,,ALEXA SXT,23.76 x 17.82,100mm,hko,d,,190619,Camera
-75MM,C60,img/FOO_0060.jpg,1,74,1,33,ALEXA SXT,23.76 x 17.82,50mm,shjo,r,,190620,Camera
-75MM,C70,img/FOO_0070.jpg,1,56,,,ALEXA SXT,23.76 x 17.82,100mm,shjo,o,,190621,Camera
+Show,Shot,Thumbnail,ORG_In,ORG_Out,TW_In,TW_Out,Repo,Camera,Film Back,Focal Length,Assign,Status,Output,Deadline,Task
+75MM,C10,img/FOO_0010.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,50mm,hko,w,,190615,"Camera, Object"
+75MM,C11,img/FOO_0020.jpg,1,74,1,37,,ALEXA SXT,23.76 x 17.82,75mm,hko,r,,190616,"Camera, Rotomation"
+75MM,C12,img/FOO_0030.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,d,190617,190618,Camera
+75MM,C13,img/FOO_0040.jpg,1,268,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,d,190618,190618,Camera
+75MM,C14,img/FOO_0050.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,100mm,hko,d,,190619,Camera
+75MM,C15,img/FOO_0060.jpg,1,74,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,r,,190620,Camera
+75MM,C16,img/FOO_0070.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,o,,190621,Camera
+75MM,C17,img/FOO_0010.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,50mm,hko,w,,190615,"Camera, Object"
+75MM,C18,img/FOO_0020.jpg,1,74,1,37,,ALEXA SXT,23.76 x 17.82,75mm,hko,r,,190616,"Camera, Rotomation"
+75MM,C19,img/FOO_0030.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,d,190617,190618,Camera
+75MM,C20,img/FOO_0040.jpg,1,268,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,d,190618,190618,Camera
+75MM,C21,img/FOO_0050.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,100mm,hko,d,,190619,Camera
+75MM,C22,img/FOO_0060.jpg,1,74,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,r,,190620,Camera
+75MM,C23,img/FOO_0070.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,o,,190621,Camera
+75MM,C24,img/FOO_0010.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,50mm,hko,w,,190615,"Camera, Object"
+75MM,C25,img/FOO_0020.jpg,1,74,1,37,,ALEXA SXT,23.76 x 17.82,75mm,hko,r,,190616,"Camera, Rotomation"
+75MM,C26,img/FOO_0030.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,d,190617,190618,Camera
+75MM,C27,img/FOO_0040.jpg,1,268,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,d,190618,190618,Camera
+75MM,C28,img/FOO_0050.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,100mm,hko,d,,190619,Camera
+75MM,C29,img/FOO_0060.jpg,1,74,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,r,,190620,Camera
+75MM,C30,img/FOO_0070.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,o,,190621,Camera
+75MM,C31,img/FOO_0010.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,50mm,hko,w,,190615,"Camera, Object"
+75MM,C32,img/FOO_0020.jpg,1,74,1,37,,ALEXA SXT,23.76 x 17.82,75mm,hko,r,,190616,"Camera, Rotomation"
+75MM,C33,img/FOO_0030.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,d,190617,190618,Camera
+75MM,C34,img/FOO_0040.jpg,1,268,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,d,190618,190618,Camera
+75MM,C35,img/FOO_0050.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,100mm,hko,d,,190619,Camera
+75MM,C36,img/FOO_0060.jpg,1,74,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,r,,190620,Camera
+75MM,C37,img/FOO_0070.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,o,,190621,Camera
+75MM,C38,img/FOO_0010.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,50mm,hko,w,,190615,"Camera, Object"
+75MM,C39,img/FOO_0020.jpg,1,74,1,37,,ALEXA SXT,23.76 x 17.82,75mm,hko,r,,190616,"Camera, Rotomation"
+75MM,C40,img/FOO_0030.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,d,190617,190618,Camera
+75MM,C41,img/FOO_0040.jpg,1,268,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,d,190618,190618,Camera
+75MM,C42,img/FOO_0050.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,100mm,hko,d,,190619,Camera
+75MM,C43,img/FOO_0060.jpg,1,74,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,r,,190620,Camera
+75MM,C44,img/FOO_0070.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,o,,190621,Camera
+75MM,C45,img/FOO_0010.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,50mm,hko,w,,190615,"Camera, Object"
+75MM,C46,img/FOO_0020.jpg,1,74,1,37,,ALEXA SXT,23.76 x 17.82,75mm,hko,r,,190616,"Camera, Rotomation"
+75MM,C47,img/FOO_0030.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,d,190617,190618,Camera
+75MM,C48,img/FOO_0040.jpg,1,268,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,d,190618,190618,Camera
+75MM,C49,img/FOO_0050.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,100mm,hko,d,,190619,Camera
+75MM,C50,img/FOO_0060.jpg,1,74,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,r,,190620,Camera
+75MM,C51,img/FOO_0070.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,o,,190621,Camera
+75MM,C52,img/FOO_0010.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,50mm,hko,w,,190615,"Camera, Object"
+75MM,C53,img/FOO_0020.jpg,1,74,1,37,,ALEXA SXT,23.76 x 17.82,75mm,hko,r,,190616,"Camera, Rotomation"
+75MM,C54,img/FOO_0030.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,d,190617,190618,Camera
+75MM,C55,img/FOO_0040.jpg,1,268,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,d,190618,190618,Camera
+75MM,C56,img/FOO_0050.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,100mm,hko,d,,190619,Camera
+75MM,C57,img/FOO_0060.jpg,1,74,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,r,,190620,Camera
+75MM,C58,img/FOO_0070.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,o,,190621,Camera
+75MM,C59,img/FOO_0010.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,50mm,hko,w,,190615,"Camera, Object"
+75MM,C60,img/FOO_0020.jpg,1,74,1,37,,ALEXA SXT,23.76 x 17.82,75mm,hko,r,,190616,"Camera, Rotomation"
+75MM,C61,img/FOO_0030.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,d,190617,190618,Camera
+75MM,C62,img/FOO_0040.jpg,1,268,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,d,190618,190618,Camera
+75MM,C63,img/FOO_0050.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,100mm,hko,d,,190619,Camera
+75MM,C64,img/FOO_0060.jpg,1,74,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,r,,190620,Camera
+75MM,C65,img/FOO_0070.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,o,,190621,Camera
+75MM,C66,img/FOO_0010.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,50mm,hko,w,,190615,"Camera, Object"
+75MM,C67,img/FOO_0020.jpg,1,74,1,37,,ALEXA SXT,23.76 x 17.82,75mm,hko,r,,190616,"Camera, Rotomation"
+75MM,C68,img/FOO_0030.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,d,190617,190618,Camera
+75MM,C69,img/FOO_0040.jpg,1,268,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,d,190618,190618,Camera
+75MM,C70,img/FOO_0050.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,100mm,hko,d,,190619,Camera
+75MM,C71,img/FOO_0060.jpg,1,74,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,r,,190620,Camera
+75MM,C72,img/FOO_0070.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,o,,190621,Camera
+75MM,C73,img/FOO_0010.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,50mm,hko,w,,190615,"Camera, Object"
+75MM,C74,img/FOO_0020.jpg,1,74,1,37,,ALEXA SXT,23.76 x 17.82,75mm,hko,r,,190616,"Camera, Rotomation"
+75MM,C75,img/FOO_0030.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,d,190617,190618,Camera
+75MM,C76,img/FOO_0040.jpg,1,268,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,d,190618,190618,Camera
+75MM,C77,img/FOO_0050.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,100mm,hko,d,,190619,Camera
+75MM,C78,img/FOO_0060.jpg,1,74,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,r,,190620,Camera
+75MM,C79,img/FOO_0070.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,o,,190621,Camera
+75MM,C80,img/FOO_0010.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,50mm,hko,w,,190615,"Camera, Object"
+75MM,C81,img/FOO_0020.jpg,1,74,1,37,,ALEXA SXT,23.76 x 17.82,75mm,hko,r,,190616,"Camera, Rotomation"
+75MM,C82,img/FOO_0030.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,d,190617,190618,Camera
+75MM,C83,img/FOO_0040.jpg,1,268,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,d,190618,190618,Camera
+75MM,C84,img/FOO_0050.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,100mm,hko,d,,190619,Camera
+75MM,C85,img/FOO_0060.jpg,1,74,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,r,,190620,Camera
+75MM,C86,img/FOO_0070.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,o,,190621,Camera
+75MM,C87,img/FOO_0010.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,50mm,hko,w,,190615,"Camera, Object"
+75MM,C88,img/FOO_0020.jpg,1,74,1,37,,ALEXA SXT,23.76 x 17.82,75mm,hko,r,,190616,"Camera, Rotomation"
+75MM,C89,img/FOO_0030.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,d,190617,190618,Camera
+75MM,C90,img/FOO_0040.jpg,1,268,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,d,190618,190618,Camera
+75MM,C91,img/FOO_0050.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,100mm,hko,d,,190619,Camera
+75MM,C92,img/FOO_0060.jpg,1,74,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,r,,190620,Camera
+75MM,C93,img/FOO_0070.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,o,,190621,Camera
+75MM,C94,img/FOO_0010.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,50mm,hko,w,,190615,"Camera, Object"
+75MM,C95,img/FOO_0020.jpg,1,74,1,37,,ALEXA SXT,23.76 x 17.82,75mm,hko,r,,190616,"Camera, Rotomation"
+75MM,C96,img/FOO_0030.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,d,190617,190618,Camera
+75MM,C97,img/FOO_0040.jpg,1,268,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,d,190618,190618,Camera
+75MM,C98,img/FOO_0050.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,100mm,hko,d,,190619,Camera
+75MM,C99,img/FOO_0060.jpg,1,74,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,r,,190620,Camera
+75MM,C100,img/FOO_0070.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,o,,190621,Camera
+75MM,C101,img/FOO_0010.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,50mm,hko,w,,190615,"Camera, Object"
+75MM,C102,img/FOO_0020.jpg,1,74,1,37,,ALEXA SXT,23.76 x 17.82,75mm,hko,r,,190616,"Camera, Rotomation"
+75MM,C103,img/FOO_0030.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,d,190617,190618,Camera
+75MM,C104,img/FOO_0040.jpg,1,268,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,d,190618,190618,Camera
+75MM,C105,img/FOO_0050.jpg,1,75,,,,ALEXA SXT,23.76 x 17.82,100mm,hko,d,,190619,Camera
+75MM,C106,img/FOO_0060.jpg,1,74,1,33,,ALEXA SXT,23.76 x 17.82,50mm,shjo,r,,190620,Camera
+75MM,C107,img/FOO_0070.jpg,1,56,,,y,ALEXA SXT,23.76 x 17.82,100mm,shjo,o,,190621,Camera

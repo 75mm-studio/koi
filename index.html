@@ -65,6 +65,17 @@
         }
       };
 
+      function repoRenderer(instance, td, row, col, prop, value, cellProperties) {
+        td.style.color = '#FFFFFF';
+        Handsontable.renderers.TextRenderer.apply(this, arguments);
+        if (value === "") {
+          //pass
+        } else {
+          td.style.background = '#000000';
+          Handsontable.dom.fastInnerHTML(td, `<b>Yes</b>`);
+        }
+      };
+
       function imageRenderer(instance, td, row, col, prop, value, cellProperties) {
         Handsontable.renderers.cellDecorator.apply(this, arguments);
         //Handsontable.dom.fastInnerHTML(td, `<img class="img" style="width: 250px; height: auto; display: block;" src=" `+ value +` " alt="`+ value +`">`);
@@ -89,6 +100,7 @@
 
       Handsontable.renderers.registerRenderer('imageRenderer', imageRenderer);
       Handsontable.renderers.registerRenderer('statusRenderer', statusRenderer);
+      Handsontable.renderers.registerRenderer('repoRenderer', repoRenderer);
       //Handsontable.renderers.registerRenderer('previewRenderer', previewRenderer);
 
       var container = document.getElementById('shotdb');
@@ -99,7 +111,7 @@
 
         rowHeaders: false,
         colHeaders: true,
-        colHeaders: ['Show', 'Shot', 'Thumbnail', 'ORG In', 'ORG Out', 'TW In', 'TW Out', 'Camera', 'Film Back', 'Focal Length', 'Assign', 'Status', 'Output', 'Deadline', 'Task'],
+        colHeaders: ['Show', 'Shot', 'Thumbnail', 'ORG In', 'ORG Out', 'TW In', 'TW Out', 'Repo', 'Camera', 'Film Back', 'Focal Length', 'Assign', 'Status', 'Output', 'Deadline', 'Task'],
         /*
         columns: [
           {data: "Show", title: "Show", readOnly: true},
@@ -139,7 +151,11 @@
             cellProperties.renderer = "imageRenderer"; // uses lookup map
           }
 
-          if (col === 11) {
+          if (col === 7) {
+            cellProperties.renderer = "repoRenderer"; // uses lookup map
+          }
+
+          if (col === 12) {
             cellProperties.renderer = "statusRenderer"; // uses lookup map
           }
           /*

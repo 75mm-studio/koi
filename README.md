@@ -10,6 +10,7 @@
 
 /show/lazypic_190625_circle/scenes/S001/CIR_01_0010/plate/dpx/CIR_01_0010.####.dpx
 
+```
 show
 └─ SHOW_NAME `<client>_<create date>_<project name>` (ex. lazypic_190625_circle)
     ├─ assets
@@ -29,6 +30,7 @@ show
                     └─ PLATE_FILE_EXTENTION (ex. dpx)
                         └─  `<plate_basename>.####.<plate_file_extention>` (ex. CIR_01_0010.####.dpx)
                     
+```
 
 ## 웹 애플리케이션 튜토리얼
 

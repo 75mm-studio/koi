@@ -18,7 +18,6 @@ S001
         └─ CIR_02_0020.####.dpx
 ```
 
-
 ```
 RESULT
 /show/lazypic_190701_circle/scenes/S001/CIR_01_0010/plate/dpx/CIR_01_0010.####.dpx
@@ -39,6 +38,9 @@ show
                     └─ PLATE_FILE_EXTENTION (ex. dpx)
                         └─  <plate_name>.####.<plate_file_extention> (ex. CIR_01_0010.####.dpx)
 ```
+
+## CSV FORMAT (DB)
+[https://github.com/lazypic/koi/blob/master/data/show/75MM.csv](https://github.com/lazypic/koi/blob/master/data/show/75MM.csv)
 
 ## 웹 애플리케이션 튜토리얼
 

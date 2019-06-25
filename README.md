@@ -8,10 +8,21 @@
 
 ## Folder Structure
 
+```
+INPUT (From Client)
+
+S001
+    ├─ CIR_01_0010
+    |   └─ CIR_01_0010.####.dpx
+    └─ CIR_02_0020
+        └─ CIR_02_0020.####.dpx
+```
 
 
 ```
+RESULT
 /show/lazypic_190701_circle/scenes/S001/CIR_01_0010/plate/dpx/CIR_01_0010.####.dpx
+/show/lazypic_190701_circle/scenes/S001/CIR_02_0020/plate/dpx/CIR_02_0020.####.dpx
 
 show
 └─ SHOW_NAME <client>_<create date>_<project name> (ex. lazypic_190701_circle)

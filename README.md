@@ -8,11 +8,11 @@
 
 ## Folder Structure
 
-/show/lazypic_190625_circle/scenes/S001/CIR_01_0010/plate/dpx/CIR_01_0010.####.dpx
+/show/lazypic_190701_circle/scenes/S001/CIR_01_0010/plate/dpx/CIR_01_0010.####.dpx
 
 ```
 show
-└─ SHOW_NAME `<client>_<create date>_<project name>` (ex. lazypic_190625_circle)
+└─ SHOW_NAME <client>_<create date>_<project name> (ex. lazypic_190701_circle)
     ├─ assets
     ├─ data
     ├─ images
@@ -23,12 +23,12 @@ show
         ├─ SEQUENCE_NAME_01 (ex. S001)
         ├─ SEQUENCE_NAME_02
         └─ SEQUENCE_NAME_03
-            ├─ SHOT_NAME_01 `<plate_name>` (ex. CIR_01_0010)
+            ├─ SHOT_NAME_01 <plate_name> (ex. CIR_01_0010)
             ├─ SHOT_NAME_02
             └─ SHOT_NAME_03
                 └─ plate
                     └─ PLATE_FILE_EXTENTION (ex. dpx)
-                        └─  `<plate_basename>.####.<plate_file_extention>` (ex. CIR_01_0010.####.dpx)
+                        └─  <plate_name>.####.<plate_file_extention> (ex. CIR_01_0010.####.dpx)
                     
 ```
 

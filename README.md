@@ -3,7 +3,7 @@
 
 ## UI
 
-[Preview - https://lazypic.github.io/koi/](https://lazypic.github.io/koi/)
+[Preview - https://75mm-studio.github.io/koi/](https://75mm-studio.github.io/koi/)
 
 
 ## Folder Structure
